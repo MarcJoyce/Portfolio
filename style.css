@@ -72,10 +72,11 @@
   top: 0;
   position: fixed;
   z-index: 2;
+  background-color: #1b1b1b !important;
 }
 
 .nav.scrolled {
-  background-color: #161616 !important;
+  background-color: #1b1b1b !important;
   transition: background-color 500ms linear;
 }
 
@@ -240,10 +241,100 @@
 
 /* projects section */
 
+@media (max-width: 900px) {
+  .project-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 /* services section */
+
+.services {
+  background-color: #1b1b1b;
+}
+
+.icon {
+  color: #fff;
+  font-size: 36px;
+}
+
+.icon-title {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #d39287;
+  font-family: Poppins;
+}
+
+.services p {
+  font-size: 16px;
+  font-weight: lighter;
+  color: #fff;
+  font-family: Poppins;
+}
+
+@media (max-width: 900px) {
+  .services {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
 /* about section */
 
+section {
+  padding: 140px 0;
+}
+
+.section-index {
+  color: #d39287;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: Poppins;
+}
+
+.section-heading {
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+}
+
+.section-subheading {
+  color: grey;
+  margin: 10px 0;
+}
+
+.section-info {
+  font-size: 24px;
+  color: grey;
+}
+
+.more {
+  margin: 40px 0;
+}
+
+button {
+  background: none;
+  border: 0.3pt solid rgba(184, 140, 93, 0.7);
+  padding: 18px 36px;
+  font-size: 12px !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .story {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 /* contact section */
+
+.contact {
+  background-color: #1b1b1b;
+  color: #fff;
+}
 
 /* footer section */
