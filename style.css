@@ -100,7 +100,6 @@
   float: left;
   right: 40px;
   position: fixed;
-  margin-right: 10px;
 }
 
 .nav #menu li {
@@ -141,7 +140,6 @@
   transition: all 0.3s ease-out;
   visibility: hidden;
   opacity: 0;
-  margin-right: 10px;
 }
 
 .close-btn {
@@ -154,7 +152,6 @@
   z-index: 2;
   top: -2px;
   line-height: 80px;
-  margin-right: 10px;
 }
 
 #resize {
@@ -212,7 +209,7 @@
     visibility: visible;
     opacity: 1;
     margin-top: 6px;
-    margin-right: 4px;
+    margin-right: 6px;
   }
 
   nav #brand {
