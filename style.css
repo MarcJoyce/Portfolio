@@ -253,7 +253,7 @@ section {
 }
 
 .story {
-  color: #1b1b1b;
+  background-color: #1b1b1b;
 }
 
 .section-index {
@@ -311,8 +311,8 @@ section {
 /* contact section */
 
 .contact {
-  background-color: #1b1b1b;
-  color: #fff;
+  background-color: #fff;
+  color: #1b1b1b;
 }
 
 .contact-heading {
@@ -324,7 +324,7 @@ section {
 
 .contact label {
   font-size: 18px;
-  color: #fff;
+  color: #1b1b1b;
   letter-spacing: 2px;
 }
 
@@ -340,7 +340,7 @@ section {
   background: none;
   border: 0.3pt solid rgba(189, 40, 40, 0.7);
   padding: 18px 36px;
-  color: #fff;
+  color: #1b1b1b;
   font-size: 12px !important;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -358,6 +358,7 @@ section {
 .footer {
   text-align: center !important;
   padding: 70px 0;
+  background-color: #1b1b1b;
 }
 
 .footer li {
@@ -365,7 +366,7 @@ section {
 }
 
 .footer a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
