@@ -98,8 +98,9 @@
 
 .nav #menu {
   float: left;
-  right: 50px;
+  right: 40px;
   position: fixed;
+  margin-right: 10px;
 }
 
 .nav #menu li {
@@ -127,7 +128,7 @@
 
 #toggle {
   position: absolute;
-  right: 50px;
+  right: 40px;
   top: 20px;
   font-weight: 300;
   color: #fff;
@@ -140,11 +141,12 @@
   transition: all 0.3s ease-out;
   visibility: hidden;
   opacity: 0;
+  margin-right: 10px;
 }
 
 .close-btn {
   position: absolute;
-  right: 50px;
+  right: 30px;
   font-weight: 300;
   color: #fff;
   text-transform: uppercase;
@@ -152,6 +154,7 @@
   z-index: 2;
   top: -2px;
   line-height: 80px;
+  margin-right: 10px;
 }
 
 #resize {
