@@ -261,7 +261,7 @@ section {
   font-family: Poppins;
 }
 
-.fa-heart, .fa-fist-raised .fa-arrows-alt {
+.fa-heart, .fa-fist-raised, .fa-arrows-alt {
   color: rgb(189, 40, 40);
 }
 
