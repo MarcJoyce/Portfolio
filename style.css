@@ -371,3 +371,14 @@ section {
 .footer-icon {
   padding: 0 9px;
 }
+
+@media (max-width: 900px) {
+  .footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .footer a {
+    padding-bottom: 20px;
+  }
+}
