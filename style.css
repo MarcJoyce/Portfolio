@@ -37,7 +37,7 @@
 }
 
 .header h1 {
-  color: rgb(189, 40, 40);
+  color: #d3ae87;
   font-size: 80px !important;
   font-weight: bold;
 }
@@ -87,7 +87,7 @@
 }
 
 .nav #brand a {
-  color: #fff;
+  color: #d3ae87;
   font-family: Poppins !important;
   transition: all 500ms ease-out;
 }
@@ -192,7 +192,7 @@
 }
 
 #resize #menu li a {
-  color: #fff;
+  color: #d3ae87;
 }
 
 #resize #menu li a:hover {
@@ -255,14 +255,14 @@ section {
 }
 
 .section-index {
-  color: rgb(189, 40, 40);
+  color: #d3ae87;
   font-weight: bolder;
   font-size: 20px;
   font-family: Poppins;
 }
 
 .story .icon {
-  color: rgb(189, 40, 40);
+  color: #d3ae87;
   text-align: center;
   padding: 18px 9px;
 }
@@ -326,7 +326,7 @@ section {
 
 .contact-heading {
   font-size: 20px;
-  color: rgb(189, 40, 40);
+  color: #d3ae87;
   letter-spacing: 2px;
   font-weight: lighter;
 }
