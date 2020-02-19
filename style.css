@@ -252,7 +252,6 @@ section {
 
 .story {
   background-color: #1b1b1b;
-  text-align: center;
 }
 
 .section-index {
@@ -262,16 +261,22 @@ section {
   font-family: Poppins;
 }
 
-.fa-heart {
+.story .icon {
   color: rgb(189, 40, 40);
+  text-align: center;
+  padding: 18px 9px;
 }
 
-.fa-fist-raised {
-  color: rgb(189, 40, 40);
+.story h3 {
+  font-size: 20px;
+  padding: 18px 9px;
 }
 
-.fa-arrows-alt {
-  color: rgb(189, 40, 40);
+.story p {
+  color: #fff;
+  font-size: 16px;
+  padding: 18px 9px;
+  font-weight: lighter;
 }
 
 .section-heading {
@@ -284,6 +289,9 @@ section {
 .section-info {
   font-size: 24px;
   color: #fff;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  line-height: 42px;
 }
 
 .more {
@@ -294,16 +302,18 @@ section {
   background: none;
   border: 0.3pt solid rgba(189, 40, 40, 0.7);
   padding: 18px 36px;
+  color: #fff;
   font-size: 12px !important;
   letter-spacing: 2px;
   text-transform: uppercase;
-  display: none;
+  /* display: none; */
 }
 
 @media (max-width: 900px) {
   .story {
     padding-left: 50px;
     padding-right: 50px;
+    text-align: center;
   }
 }
 
@@ -378,7 +388,7 @@ section {
     padding-left: 50px;
     padding-right: 50px;
   }
-  
+
   .footer a {
     padding-bottom: 20px;
   }
