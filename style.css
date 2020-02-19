@@ -245,58 +245,15 @@
   }
 }
 
-/* services section */
-
-.services {
-  background-color: #1b1b1b;
-}
-
-.service {
-  text-align: center;
-}
-
-.services .icon {
-  text-align: center;
-}
-
-.fa-heart {
-  color: rgb(189, 40, 40);
-}
-
-.fa-fist-raised {
-  color: #fff;
-}
-
-.fa-arrows-alt {
-  color: rgb(189, 40, 40);
-}
-
-.service .heading {
-  font-size: 20px;
-  font-weight: bolder;
-  letter-spacing: 2px;
-  padding: 18px 0;
-  color: rgb(189, 40, 40);
-}
-
-.service .service-text {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
-
-@media (max-width: 900px) {
-  .services {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
 
 /* about section */
 
 section {
   padding: 140px 0;
+}
+
+.story {
+  color: #1b1b1b;
 }
 
 .section-index {
@@ -306,22 +263,28 @@ section {
   font-family: Poppins;
 }
 
+.fa-heart {
+  color: rgb(189, 40, 40);
+}
+
+.fa-fist-raised {
+  color: rgb(189, 40, 40);
+}
+
+.fa-arrows-alt {
+  color: rgb(189, 40, 40);
+}
+
 .section-heading {
-  color: grey;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 18px;
 }
 
-.section-subheading {
-  color: grey;
-  margin: 10px 0;
-  font-size: 18px;
-}
-
 .section-info {
   font-size: 24px;
-  color: grey;
+  color: #fff;
 }
 
 .more {
