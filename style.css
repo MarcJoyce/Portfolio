@@ -36,6 +36,11 @@
   transform: translate(-50%, -50%);
 }
 
+.header .no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .header h1 {
   color: #d3ae87;
   font-size: 80px !important;
@@ -48,7 +53,7 @@
   font-weight: lighter;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .header h1 {
     font-size: 64px !important;
     text-align: center;
@@ -204,7 +209,7 @@
   opacity: 1;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   #toggle {
     visibility: visible;
     opacity: 1;
@@ -229,7 +234,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 767px) {
   #resize {
     visibility: hidden !important;
   }
@@ -241,7 +246,7 @@
   color: #1b1b1b;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .project-section {
     padding-left: 50px;
     padding-right: 50px;
@@ -317,11 +322,19 @@ section {
   color: #fff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .story {
     padding-left: 50px;
     padding-right: 50px;
-    text-align: center;
+    text-align: left;
+  }
+
+  .story .icon {
+    text-align: left;
+  }
+
+  .story .icon-img {
+    padding-left: 10px;
   }
 }
 
@@ -350,7 +363,7 @@ section {
   border: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .about-story {
     padding-left: 50px;
     padding-right: 50px;
@@ -398,7 +411,7 @@ section {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .contact {
     padding-left: 50px;
     padding-right: 50px;
@@ -427,7 +440,7 @@ section {
   padding: 0 9px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .footer {
     padding-left: 50px;
     padding-right: 50px;
