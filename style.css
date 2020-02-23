@@ -246,6 +246,29 @@
   color: #1b1b1b;
 }
 
+.more-projects {
+  margin: 40px 0;
+}
+
+.more-projects button {
+  background: none;
+  border: 0.3pt solid rgba(211, 174, 135, 0.7);
+  padding: 18px 36px;
+  font-size: 12px !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.more-projects button a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.more-projects button:hover {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
 @media (max-width: 767px) {
   .project-section {
     padding-left: 50px;
@@ -314,12 +337,13 @@ section {
   font-size: 12px !important;
   letter-spacing: 2px;
   text-transform: uppercase;
-  /* display: none; */
-}
-
-.more button a {
   text-decoration: none;
   color: #fff;
+}
+
+.more button:hover {
+  background-color: #fff;
+  color: #1b1b1b;
 }
 
 @media (max-width: 767px) {
@@ -345,18 +369,19 @@ section {
   font-weight: lighter;
   font-size: 18px;
   font-family: Poppins;
-}
-
-.about-text .stronger {
-  font-weight: bolder;
+  line-height: 28px;
 }
 
 .about-hr {
   width: 50%;
   border: none;
-  margin-left: 25%;
+  margin: 15px 0 15px 25%;
   border-bottom: 0.1pt dotted rgba(156, 156, 156, 0.3);
   border-width: 10px;
+}
+
+.about-hr:last-child {
+  margin-top: 30px;
 }
 
 .blank-hr {
@@ -411,6 +436,11 @@ section {
   text-transform: uppercase;
 }
 
+.contact button:hover {
+  color: #fff;
+  background-color: #1b1b1b;
+}
+
 @media (max-width: 767px) {
   .contact {
     padding-left: 50px;
@@ -449,4 +479,10 @@ section {
   .footer a {
     padding-bottom: 20px;
   }
+}
+
+/* animation */
+
+.animate-fadeInUp {
+  opacity: 0;
 }
