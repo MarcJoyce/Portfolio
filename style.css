@@ -254,6 +254,7 @@
 .more-projects button {
   background: none;
   border: 0.3pt solid rgba(211, 174, 135, 0.7);
+  border-radius: 5px; 
   padding: 18px 36px;
   font-size: 12px !important;
   letter-spacing: 2px;
@@ -334,6 +335,7 @@ section {
 .more button {
   background: none;
   border: 0.3pt solid rgba(211, 174, 135, 0.7);
+  border-radius: 5px; 
   padding: 18px 36px;
   font-size: 12px !important;
   letter-spacing: 2px;
