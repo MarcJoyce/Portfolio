@@ -426,7 +426,7 @@ section {
   list-style: none;
 }
 
-.contact a {
+.contact button {
   background: none;
   border: 0.3pt solid rgba(211, 174, 135, 0.7);
   padding: 18px 36px;
@@ -436,7 +436,7 @@ section {
   text-transform: uppercase;
 }
 
-.contact a:hover {
+.contact button:hover {
   color: #fff;
   background-color: #1b1b1b;
 }
