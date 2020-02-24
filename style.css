@@ -244,16 +244,27 @@
 
 .project-section .section-heading {
   color: #1b1b1b;
-  text-align: center;
 }
 
 .more-projects {
   margin: 40px 0;
 }
 
+.project-section .project-title .project-img {
+  text-align: center;
+}
+
+.project-section .project-title h5{
+  color: #1b1b1b;
+  font-size: 20px !important;
+  letter-spacing: 2px;
+  text-align: center;
+
+}
+
 .more-projects button {
   background: none;
-  border: 0.3pt solid rgba(211, 174, 135, 0.7);
+  border: 1pt solid rgba(211, 174, 135, 0.7);
   border-radius: 5px; 
   padding: 18px 36px;
   font-size: 12px !important;
@@ -273,8 +284,11 @@
 
 @media (max-width: 767px) {
   .project-section {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .project-section .section-heading {
+    text-align: left;
   }
 }
 
@@ -334,7 +348,7 @@ section {
 
 .more button {
   background: none;
-  border: 0.3pt solid rgba(211, 174, 135, 0.7);
+  border: 1pt solid rgba(211, 174, 135, 0.7);
   border-radius: 5px; 
   padding: 18px 36px;
   font-size: 12px !important;
@@ -351,8 +365,8 @@ section {
 
 @media (max-width: 767px) {
   .story {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
     text-align: left;
   }
 
@@ -393,8 +407,8 @@ section {
 
 @media (max-width: 767px) {
   .about-story {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 /* contact section */
@@ -431,7 +445,7 @@ section {
 
 .contact button {
   background: none;
-  border: 0.7pt solid rgba(211, 174, 135, 0.7);
+  border: 1pt solid rgba(211, 174, 135, 0.7);
   padding: 18px 36px;
   color: #1b1b1b;
   font-size: 12px !important;
@@ -444,10 +458,15 @@ section {
   background-color: #1b1b1b;
 }
 
+.contact .form-textarea {
+  border: none;
+  border-bottom: 1pt solid rgba(211, 174, 135, 0.7);
+}
+
 @media (max-width: 767px) {
   .contact {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -473,10 +492,15 @@ section {
   padding: 0 9px;
 }
 
+.footer a:hover {
+  color: rgb(211, 174, 135);
+  text-decoration: none;
+}
+
 @media (max-width: 767px) {
   .footer {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .footer a {
