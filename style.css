@@ -259,12 +259,12 @@
   text-transform: uppercase;
 }
 
-.more-projects button a {
+.more-projects a {
   text-decoration: none;
   color: #1b1b1b;
 }
 
-.more-projects button:hover {
+.more-projects a:hover {
   background-color: #1b1b1b;
   color: #fff;
 }
@@ -330,7 +330,7 @@ section {
   margin: 40px 0;
 }
 
-.more button {
+.more a {
   background: none;
   border: 0.3pt solid rgba(211, 174, 135, 0.7);
   padding: 18px 36px;
@@ -341,7 +341,7 @@ section {
   color: #fff;
 }
 
-.more button:hover {
+.more a:hover {
   background-color: #fff;
   color: #1b1b1b;
 }
@@ -426,7 +426,7 @@ section {
   list-style: none;
 }
 
-.contact button {
+.contact a {
   background: none;
   border: 0.3pt solid rgba(211, 174, 135, 0.7);
   padding: 18px 36px;
@@ -436,7 +436,7 @@ section {
   text-transform: uppercase;
 }
 
-.contact button:hover {
+.contact a:hover {
   color: #fff;
   background-color: #1b1b1b;
 }
