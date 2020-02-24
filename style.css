@@ -250,7 +250,7 @@
   margin: 40px 0;
 }
 
-.more-projects a {
+.more-projects button {
   background: none;
   border: 0.3pt solid rgba(211, 174, 135, 0.7);
   padding: 18px 36px;
@@ -259,12 +259,12 @@
   text-transform: uppercase;
 }
 
-.more-projects a {
+.more-projects button {
   text-decoration: none;
   color: #1b1b1b;
 }
 
-.more-projects a:hover {
+.more-projects button:hover {
   background-color: #1b1b1b;
   color: #fff;
 }
@@ -330,7 +330,7 @@ section {
   margin: 40px 0;
 }
 
-.more a {
+.more button {
   background: none;
   border: 0.3pt solid rgba(211, 174, 135, 0.7);
   padding: 18px 36px;
@@ -341,7 +341,7 @@ section {
   color: #fff;
 }
 
-.more a:hover {
+.more button:hover {
   background-color: #fff;
   color: #1b1b1b;
 }
