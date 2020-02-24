@@ -253,7 +253,7 @@
 
 .more-projects button {
   background: none;
-  border: 3px solid rgba(211, 174, 135, 0.7);
+  border: 3pt solid rgba(211, 174, 135, 0.7);
   padding: 18px 36px;
   font-size: 12px !important;
   letter-spacing: 2px;
