@@ -515,3 +515,13 @@ section {
 .animate-fadeInUp {
   opacity: 0;
 }
+
+/* tech.html */
+
+.tech-stack {
+  background: none;
+  top: 80px;
+  color: #000;
+  z-index: 3;
+  width: 100%;
+}
