@@ -7,14 +7,6 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-
     <!-- font awesome -->
     <script
       defer
@@ -27,400 +19,49 @@
       rel="stylesheet"
     />
 
-    <!-- icons -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
-    <!-- for on scroll animations -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
-    />
-    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script> -->
-
     <title>Marc Joyce || Web Developer</title>
   </head>
   <body>
-    <a name="home"></a>
-    <div class="wrapper">
-      <!--------------- home section starts here --------------->
-
-      <div class="container"></div>
-
-      <div class="header">
-        <div class="row no-padding">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <h1>Marc Joyce</h1>
-          </div>
-        </div>
-        <div class="row no-padding">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <p>Web developer</p>
-          </div>
-        </div>
+    <secton class="home" id="home">
+      <header>
+        <a href="#" class="logo">Logo</a>
+        <div class="toggle" id="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="title">
+        <h1>
+          Hello World! <br />
+          I'm <span>Marc Joyce</span>, a web developer from Lancashire, UK
+        </h1>
+        <a href="#">See work</a>
+        <a href="#">Know More</a>
+        <a href="#">CV</a>
       </div>
-
-      <!--------------- home section ends here --------------->
-
-      <!--------------- navbar starts here --------------->
-
-      <nav class="nav">
-        <span id="brand">
-          <a href="index.html">Marc Joyce</a>
-        </span>
-
-        <ul id="menu">
-          <li><a href="#home">home.</a></li>
-          <li><a href="#projects">projects.</a></li>
-          <li><a href="#about">about me.</a></li>
-          <li><a href="#contact">contact.</a></li>
-        </ul>
-
-        <div id="toggle">
-          <div class="span">menu.</div>
-        </div>
-      </nav>
-
-      <div id="resize">
-        <div class="close-btn">close.</div>
-
-        <ul id="menu">
-          <li><a href="#home">home.</a></li>
-          <li><a href="#projects">projects.</a></li>
-          <li><a href="#about">about me.</a></li>
-          <li><a href="#contact">contact.</a></li>
-        </ul>
-      </div>
-
-      <!--------------- navbar ends here --------------->
-
-      <div class="content">
-        <!--------------- projects section starts here --------------->
-        <a name="projects"></a>
-
-        <section class="project-section">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-1 section-index animate-fadeInUp">
-                01
-              </div>
-              <div class="col-md-8 section-heading animate-fadeInUp">
-                featured projects.
-              </div>
-            </div>
-
-            <div class="row projects">
-              <div class="col-md-3"></div>
-              <div class="col-md-4 animate-fadeInUp">
-                <div class="project">
-                  <div class="project-img project-one">
-                    <a href="https://marcjoyce.github.io/lindenTeaRoom/"
-                      ><img src="" alt="project1-img"
-                    /></a>
-                  </div>
-                </div>
-                <div class="project-title">
-                  <h5>Linden Tea Room.</h5>
-                </div>
-              </div>
-              <div class="col-md-4 animate-fadeInUp">
-                <div class="project">
-                  <div class="project-img project-two">
-                    <img src="" alt="project2-img" />
-                  </div>
-                </div>
-                <div class="project-title">
-                  <h5>Linden Hair Salon.</h5>
-                </div>
-              </div>
-              <div class="col-md-1"></div>
-            </div>
-
-            <div class="row projects">
-              <div class="col-md-3"></div>
-              <div class="col-md-4 animate-fadeInUp">
-                <div class="project">
-                  <div class="project-img project-three">
-                    <img src="" alt="project3-img" />
-                  </div>
-                </div>
-                <div class="project-title">
-                  <h5>Kiddiepops.</h5>
-                </div>
-              </div>
-              <div class="col-md-4 animate-fadeInUp">
-                <div class="project">
-                  <div class="project-img project-four">
-                    <img src="" alt="project4-img" />
-                  </div>
-                </div>
-                <div class="project-title">
-                  <h5>Tiffins Tea Shop.</h5>
-                </div>
-              </div>
-              <div class="col-md-1"></div>
-            </div>
-
-            <!-- <div class="row projects">
-              <div class="col-md-3"></div>
-              <div class="col-md-4 animate-fadeInUp">
-                <div class="project">
-                  <div class="project-img project-five">
-                    <img src="" alt="project5-img" />
-                  </div>
-                </div>
-                <div class="project-title">
-                  <h5>PS Plumbing.</h5>
-                </div>
-              </div>
-              <div class="col-md-4 animate-fadeInUp">
-                <div class="project">
-                  <div class="project-img project-six">
-                    <img src="" alt="project6-img" />
-                  </div>
-                </div>
-                <div class="project-title">
-                  <h5>Dave Gottos.</h5>
-                </div>
-                <div class="col-md-1"></div>
-              </div>
-            </div> -->
-
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-9 more-projects animate-fadeInUp">
-                <a href="projects.html"
-                  ><button type="click" id="btn">see more.</button></a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--------------- projects section ends here --------------->
-
-        <!--------------- about section starts here --------------->
-        <a name="about"></a>
-
-        <section class="story">
-          <div class="container-fluid">
-            <div class="section-data">
-              <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-1 section-index animate-fadeInUp">
-                  02
-                </div>
-                <div class="col-md-9 section-heading animate-fadeInUp">
-                  a little about me.
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-3"></div>
-
-                <div class="col-md-4 icon animate-fadeInUp">
-                  <i class="fas fa-heart icon-img fa-3x"></i>
-                  <h3>passionate.</h3>
-                  <p>
-                    Enthusiastic about learning. Passionate about the things i
-                    create.
-                  </p>
-                </div>
-
-                <div class="col-md-4 icon animate-fadeInUp">
-                  <i class="fas fa-fist-raised icon-img fa-3x"></i>
-                  <h3>motivated.</h3>
-                  <p>
-                    Motivated to improve, motivated to inspire, motivated to be
-                    the best.
-                  </p>
-                </div>
-                <div class="col-md-1"></div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-4 icon animate-fadeInUp">
-                  <i class="fas fa-exclamation icon-img fa-3x"></i>
-                  <h3>embraces failure.</h3>
-                  <p>Grows and evolves from failure, constantly learning.</p>
-                </div>
-
-                <div class="col-md-4 icon animate-fadeInUp">
-                  <i class="fas fa-expand-arrows-alt icon-img fa-3x"></i>
-                  <h3>adaptable.</h3>
-                  <p>Adapts to change and adjusts to client needs.</p>
-                </div>
-                <div class="col-md-1"></div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-8 section-info animate-fadeInUp">
-                  hi, i'm Marc. a web developer from Lancashire, UK.
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-4 more animate-fadeInUp">
-                  <a href="about.html"
-                    ><button type="click" id="about-btn">Know more.</button></a
-                  >
-                </div>
-                <div class="col-md-4 more animate-fadeInUp">
-                  <a href="tech.html"
-                    ><button type="click" id="tech-btn">
-                      my tech Stack.
-                    </button></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--------------- about section ends here --------------->
-
-        <!--------------- contact section starts here --------------->
-
-        <a name="contact"></a>
-
-        <section class="contact">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-1 section-index animate-fadeInUp">
-                03
-              </div>
-              <div class="col-md-9 section-heading animate-fadeInUp">
-                get in touch.
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-7 contact-heading animate-fadeInUp">
-                send me a message.
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-7">
-                <form
-                  action=""
-                  name="contact-form"
-                  id="contact-form"
-                  method="POST"
-                >
-                  <ul>
-                    <li class="animate-fadeInUp">
-                      <label for="contact-name">your name :</label>
-                      <div class="textarea">
-                        <input
-                          type="text"
-                          class="form-textarea"
-                          name="contact-name"
-                          id="contact-name"
-                          value=""
-                          placeholder="enter your name."
-                          required
-                        />
-                      </div>
-                    </li>
-
-                    <br />
-
-                    <li class="animate-fadeInUp">
-                      <label for="contact-email">your email address :</label>
-                      <div class="textarea">
-                        <input
-                          type="email"
-                          class="form-textarea"
-                          name="contact-email"
-                          id="contact-email"
-                          value=""
-                          placeholder="youremail@email.com."
-                          required
-                        />
-                      </div>
-                    </li>
-
-                    <br />
-
-                    <li class="animate-fadeInUp">
-                      <label for="contact-message">your message :</label>
-                      <div class="textarea">
-                        <textarea
-                          class="form-textarea"
-                          name="contact-message"
-                          id="contact-message"
-                          rows="8"
-                          required
-                        ></textarea>
-                      </div>
-                    </li>
-
-                    <br />
-                  </ul>
-
-                  <button
-                    type="submit"
-                    name="contact-submit"
-                    id="contact-submit"
-                    class="send animate-fadeInUp"
-                  >
-                    send.
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--------------- contact section ends here --------------->
-
-        <!--------------- footer starts here --------------->
-
-        <section class="footer">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-2 footer-home">
-                <a href="#home">MARC JOYCE</a>
-              </div>
-              <div class="col-md-2"></div>
-              <div class="col-md-4">
-                <ul>
-                  <li>
-                    <a class="footer-icon" href="https://github.com/MarcJoyce"
-                      ><i class="fab fa-github"></i> github.</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="footer-icon"
-                      href="https://www.linkedin.com/in/marc-joyce-968b04137/"
-                      ><i class="fab fa-linkedin"></i> linkedin.</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="footer-icon"
-                      href="mailto:marcjoyce90@googlemail.com"
-                      ><i class="fas fa-envelope"></i> mail.</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-          </div>
-        </section>
-
-        <!--------------- footer ends here --------------->
-      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </li>
+      </ul>
+    </secton>
+    <div class="nav-bar" id="nav-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">CV</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
+    <div class="projects"></div>
+    <div class="about"></div>
+    <div class="contact"></div>
+    <div class="footer"></div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="script.js"></script>
   </body>
