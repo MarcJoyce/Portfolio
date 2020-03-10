@@ -1,6 +1,6 @@
 function toggle() {
-  var sec = document.getElementById("home");
+  var toggle = document.getElementById("toggle");
   var nav = document.getElementById("nav-bar");
-  sec.classList.toggle("active");
+  toggle.classList.toggle("active");
   nav.classList.toggle("active");
 }

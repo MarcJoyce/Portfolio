@@ -22,44 +22,118 @@
     <title>Marc Joyce || Web Developer</title>
   </head>
   <body>
-    <secton class="home" id="home">
-      <header>
-        <a href="#" class="logo">Logo</a>
+    <section class="home" id="home">
+      <nav>
+        <a href="#home" class="logo">MJ</a>
         <div class="toggle" id="toggle" onclick="toggle()"></div>
-      </header>
-      <div class="title">
-        <h1>
-          Hello World! <br />
-          I'm <span>Marc Joyce</span>, a web developer from Lancashire, UK
-        </h1>
-        <a href="#">See work</a>
-        <a href="#">Know More</a>
-        <a href="#">CV</a>
+      </nav>
+
+      <div class="nav-bar" id="nav-bar">
+        <ul>
+          <li>
+            <a href="#home" onclick="toggle()">Home</a>
+          </li>
+          <li>
+            <a href="#projects" onclick="toggle()">Projects</a>
+          </li>
+          <li>
+            <a href="#about" onclick="toggle()">About me</a>
+          </li>
+          <li>
+            <a href="#" onclick="toggle()">CV</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="toggle()">Contact</a>
+          </li>
+        </ul>
       </div>
-      <ul class="social">
-        <li>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-envelope"></i></a>
-        </li>
-      </ul>
-    </secton>
-    <div class="nav-bar" id="nav-bar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">CV</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+
+      <div class="title">
+        <div class="content">
+          <h1>
+            Hello World! <br />
+            I'm <span>Marc Joyce</span>, a web developer from Lancashire, UK
+          </h1>
+          <div class="title-btn">
+            <a class="btn" href="#projects">See work</a>
+            <a class="btn" href="#about">Know More</a>
+            <a class="btn" href="#">CV</a>
+          </div>
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/marc-joyce-968b04137/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/MarcJoyce/"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:marcjoyce90@gmail.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="arrow-down"></div>
+    </section>
+
+    <div class="projects" id="projects">
+      <div class="projects-header">Projects</div>
+      <div class="project-one">
+        <div class="project-one-img"></div>
+        <div class="project-content">
+          <h3 class="projects-heading">Linden Tea Room</h3>
+          <p class="projects-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Reiciendis, dolor.
+          </p>
+          <div class="project-buttons">
+            <a href="#"><i class="fas fa-globe"></i> Visit Website</a>
+            <a href="#"><i class="fab fa-github"></i> See Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-two">
+        <div class="project-content">
+          <h3 class="projects-heading">PS Bathrooms</h3>
+          <p class="projects-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Reiciendis, dolor.
+          </p>
+
+          <div class="project-buttons">
+            <a href="#"><i class="fas fa-globe"></i> Visit Website</a>
+            <a href="#"><i class="fab fa-github"></i> See Code</a>
+          </div>
+        </div>
+        <div class="project-two-img"></div>
+      </div>
+
+      <div class="project-three">
+        <div class="project-three-img"></div>
+        <div class="project-content">
+          <h3 class="projects-heading">Dave Gotto's</h3>
+          <p class="projects-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Reiciendis, dolor.
+          </p>
+          <div class="project-buttons">
+            <a href="#"><i class="fas fa-globe"></i> Visit Website</a>
+            <a href="#"><i class="fab fa-github"></i> See Code</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="projects"></div>
-    <div class="about"></div>
-    <div class="contact"></div>
+
+    <div class="about" id="about"></div>
+    <div class="contact" id="contact"></div>
     <div class="footer"></div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
