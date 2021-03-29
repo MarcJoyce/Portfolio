@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s all ease;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font Families */
+
+.heading {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text {
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  width: 100%;
+  background: #F8F8F8;
+}
+
+body.dark {
+  background: #111;
+}
+
+header {
+  position:fixed;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  z-index: 1000;
+}
+
+header:hover {
+  background: #F8F8F8;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  height: 100%;
+  width: auto;
+}
+
+.menu__container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__container ul li {
+  height: 100%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.menu__container ul li a {
+  color: #233d61;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.menu__container ul li i {
+  font-size: 1.25rem;
+  color: #233d61;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: clamp(1.5rem, 6vmin, 8rem);
+  color: #233d61;
+}
+
+.title {
+  font-size: clamp(1.25rem, 6vmin, 2rem);
+  font-weight: 300;
+  font-style: italic;
+  margin: 20px 0;
+  color: #233d61;
+}
+
+.main__container .cta {
+  padding: 5px 10px;
+  background: #233d61;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px #233d61;
+}
+
+.main__container .cta:hover {
+  background: #000;
+  box-shadow: 4px 4px 8px #000;
+}
+
+.socials__container {
+  height: 100%;
+  width: 10vw;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__container ul li {
+  margin: 10px 0;
+}
+
+.socials__container ul li a {
+  font-size: 2.5rem;
+  color: #233d61;
+}
+
+.socials__container ul li:hover a,
+.menu__container ul li:hover a,
+.menu__container ul li:hover i {
+  color: #000;
+}
+
+.cta__link {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-bottom: 2px solid #233d61;
+  border-right: 2px solid #233d61;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: cta 4s infinite;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75vmin;
+  color: #233d61;
+  opacity: 0.1;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.section__title {
+  color: #233d61;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.section__subtitle {
+  margin: 5px 0;
+  font-weight: 300;
+  color: #233d61;
+  font-size: 2rem;
+}
+
+#work .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.case__study {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  margin: 25px;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.work__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.work__container {
+  height: 66%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.work__container * {
+  margin: 5px;
+}
+
+.work__title {
+  font-size: 2rem;
+  color: #FFF;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.work__description { 
+  font-size: 1rem;
+  color: #FFF;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.work__cta {
+  width: 150px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  background: #233d61;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px #233d61;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@keyframes cta {
+ 0% {
+   bottom: 5%;
+ }
+ 25% {
+   bottom: 0%;
+ }
+ 50% {
+   bottom: 5%;
+ }
+ 100% {
+   bottom: 5%;
+ }
+}
