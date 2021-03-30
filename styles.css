@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Variables Values */
+
+:root {
+  --bg-color-lm: #F8F8F8;
+  --bg-color-dm: #111;
+  --main-color-lm : #233d61;
+  --main-color-dm: #F8F8F8;
+  --secondary-color-lm: #FFF;
+  --secondary-color-dm: #000;
+}
+
 /* Resets */
 
 * {
@@ -25,19 +36,31 @@ html {
 
 .heading {
   font-family: 'Roboto', sans-serif;
+  color: var(--main-color-lm);
 }
 
 .text {
   font-family: 'Roboto Slab', serif;
+  color: var(--main-color-lm);
 }
+
+body.dark .heading {
+  color: var(--main-color-dm);
+}
+
+body.dark .text {
+  color: var(--main-color-dm);
+}
+
+
 
 body {
   width: 100%;
-  background: #F8F8F8;
+  background: var(--bg-color-lm);
 }
 
 body.dark {
-  background: #111;
+  background: var(--bg-color-dm);
 }
 
 header {
@@ -52,7 +75,11 @@ header {
 }
 
 header:hover {
-  background: #F8F8F8;
+  background: var(--bg-color-lm);
+}
+
+body.dark header:hover {
+  background: var(--bg-color-dm);
 }
 
 nav {
@@ -80,15 +107,10 @@ nav a {
   cursor: pointer;
 }
 
-.menu__container ul li a {
-  color: #233d61;
+.menu__container ul li a,
+.menu__container ul li i {
   font-weight: 900;
   font-size: 1.25rem;
-}
-
-.menu__container ul li i {
-  font-size: 1.25rem;
-  color: #233d61;
 }
 
 main {
@@ -100,29 +122,36 @@ main {
 }
 
 .name {
-  font-size: clamp(1.5rem, 6vmin, 8rem);
-  color: #233d61;
+  font-size: clamp(1.5rem, 14vmin, 8rem);
 }
 
 .title {
-  font-size: clamp(1.25rem, 6vmin, 2rem);
+  font-size: clamp(1.25rem, 5vmin, 4rem);
   font-weight: 300;
   font-style: italic;
   margin: 20px 0;
-  color: #233d61;
 }
 
 .main__container .cta {
-  padding: 5px 10px;
-  background: #233d61;
-  color: #FFF;
+  padding: 10px 20px;
+  background: var(--main-color-lm);
+  color: var(--secondary-color-lm);
   border-radius: 4px;
-  box-shadow: 4px 4px 8px #233d61;
+  font-size: clamp(1rem, 2.5vmin, 2rem);
 }
 
+body.dark .main__container .cta {
+  background: var(--main-color-dm);
+  color: var(--secondary-color-dm);
+}
+
+
 .main__container .cta:hover {
-  background: #000;
-  box-shadow: 4px 4px 8px #000;
+  
+}
+
+body.dark .main__container .cta:hover {
+  
 }
 
 .socials__container {
@@ -148,27 +177,32 @@ main {
 
 .socials__container ul li a {
   font-size: 2.5rem;
-  color: #233d61;
+  color: var(--main-color-lm);
 }
 
 .socials__container ul li:hover a,
 .menu__container ul li:hover a,
 .menu__container ul li:hover i {
-  color: #000;
+
 }
 
 .cta__link {
   position: absolute;
   height: 20px;
   width: 20px;
-  border-bottom: 2px solid #233d61;
-  border-right: 2px solid #233d61;
+  border-bottom: 2px solid var(--main-color-lm);
+  border-right: 2px solid var(--main-color-lm);
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
   animation: cta 4s infinite;
   cursor: pointer;
   z-index: 100;
+}
+
+body.dark .cta__link {
+  border-bottom: 2px solid var(--main-color-dm);
+  border-right: 2px solid var(--main-color-dm);
 }
 
 .background {
@@ -179,8 +213,8 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 75vmin;
-  color: #233d61;
   opacity: 0.1;
+  z-index: -1;
 }
 
 section {
@@ -193,7 +227,6 @@ section {
 }
 
 .section__title {
-  color: #233d61;
   font-weight: 900;
   font-size: 1rem;
   text-transform: uppercase;
@@ -202,7 +235,6 @@ section {
 .section__subtitle {
   margin: 5px 0;
   font-weight: 300;
-  color: #233d61;
   font-size: 2rem;
 }
 
@@ -247,14 +279,14 @@ section {
 
 .work__title {
   font-size: 2rem;
-  color: #FFF;
+  color: var(--secondary-color-lm);
   font-weight: 900;
   letter-spacing: 2px;
 }
 
 .work__description { 
   font-size: 1rem;
-  color: #FFF;
+  color: var(--secondary-color-lm);
   font-style: italic;
   font-weight: 300;
   letter-spacing: 1px;
@@ -264,12 +296,82 @@ section {
   width: 150px;
   padding: 5px 10px;
   font-size: 0.8rem;
-  background: #233d61;
-  color: #FFF;
+  background: var(--main-color-lm);
+  color: var(--secondary-color-lm);
   border-radius: 4px;
-  box-shadow: 4px 4px 8px #233d61;
+  box-shadow: 4px 4px 8px var(--main-color-lm);
   text-align: center;
   margin-top: 10px;
+}
+
+#experience .container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.experience__position {
+  width: 20%;
+  position: relative;
+  padding: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.job__timeframe {
+  text-align: right;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.experience__info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.job__title {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.company__name {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.company__description {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.company__achievements {
+  margin-top: 10px;
+}
+
+.company__achievements li {
+  font-size: 0.8rem;
+  list-style: disc;
+  margin: 5px;
 }
 
 @keyframes cta {
