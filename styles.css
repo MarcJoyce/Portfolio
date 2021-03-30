@@ -182,6 +182,7 @@ main {
   font-size: 75vmin;
   color: #233d61;
   opacity: 0.1;
+  z-index: -1;
 }
 
 section {
