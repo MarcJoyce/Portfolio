@@ -100,12 +100,12 @@ main {
 }
 
 .name {
-  font-size: clamp(1.5rem, 6vmin, 8rem);
+   font-size: clamp(1.5rem, 14vmin, 8rem);
   color: #233d61;
 }
 
 .title {
-  font-size: clamp(1.25rem, 6vmin, 2rem);
+  font-size: clamp(1.25rem, 5vmin, 4rem);
   font-weight: 300;
   font-style: italic;
   margin: 20px 0;
@@ -113,11 +113,12 @@ main {
 }
 
 .main__container .cta {
-  padding: 5px 10px;
+  padding: 10px 20px;
   background: #233d61;
   color: #FFF;
   border-radius: 4px;
   box-shadow: 4px 4px 8px #233d61;
+  font-size: clamp(1rem, 2.5vmin, 2rem);
 }
 
 .main__container .cta:hover {
@@ -181,6 +182,7 @@ main {
   font-size: 75vmin;
   color: #233d61;
   opacity: 0.1;
+  z-index: -1;
 }
 
 section {
