@@ -374,6 +374,10 @@ section {
   margin: 5px;
 }
 
+#contact {
+  display: none;
+}
+
 @keyframes cta {
  0% {
    bottom: 5%;
