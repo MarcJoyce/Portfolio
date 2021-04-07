@@ -380,6 +380,7 @@ section {
   padding: 0;
   flex-direction: row;
   z-index: -1000;
+  transition: z-index 0s ease 0s;
 }
 
 #contact.active {
