@@ -16,7 +16,7 @@
   <title>Marc Joyce | Web Developer</title>
 </head>
 <body class="">
-  
+
 <header id="header">
   <nav>
     <a href="#">
@@ -37,15 +37,15 @@
 <main id="hero">
   <div class="main__container">
     <h2 class="name heading">Marc Joyce</h2>
-    <h1 class="title text">Web and Mobile Developer</h1>
+    <h1 class="title text">Front-end Developer</h1>
     <a href="#" class="cta text" onclick="toggleContactMenu()">Contact Me</a>
   </div>
 
   <div class="socials__container">
     <ul>
-      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-      <li><a href=""><i class="fab fa-github"></i></a></li>
-      <li><a href=""><i class="fa fa-envelope"></i></a></li>
+      <li><a class="text" href="https://www.linkedin.com/in/marcjoyce501/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></li>
+      <li><a class="text" href="https://github.com/MarcJoyce/" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
+      <li><a class="text" onclick="toggleContactMenu()"><i class="fa fa-envelope"></i></a></li>
     </ul>
   </div>
     
@@ -68,7 +68,7 @@
         Zombie ipsum reversus ab viral inferno, nam rick grimes malum
       </h4>
       <a href="#" class="text work__cta"><i class="fa fa-globe"></i> See it live</a>
-      <a href="#" class="text work__cta"><i class="fa fa-github"></i> See the code</a>
+      <a href="#" class="text work__cta"><i class="fab fa-github"></i> See the code</a>
     </div>  
     </div>
     <div class="case__study">
@@ -81,7 +81,7 @@
         Zombie ipsum reversus ab viral inferno, nam rick grimes malum
       </h4>
       <a href="#" class="text work__cta"><i class="fa fa-globe"></i> See it live</a>
-      <a href="#" class="text work__cta"><i class="fa fa-github"></i> See the code</a>
+      <a href="#" class="text work__cta"><i class="fab fa-github"></i> See the code</a>
     </div>  
     </div>
     <div class="case__study">
@@ -94,7 +94,7 @@
         Zombie ipsum reversus ab viral inferno, nam rick grimes malum
       </h4>
       <a href="#" class="text work__cta"><i class="fa fa-globe"></i> See it live</a>
-      <a href="#" class="text work__cta"><i class="fa fa-github"></i> See the code</a>
+      <a href="#" class="text work__cta"><i class="fab fa-github"></i> See the code</a>
     </div>  
     </div>
     <div class="case__study">
@@ -107,7 +107,7 @@
         Zombie ipsum reversus ab viral inferno, nam rick grimes malum
       </h4>
       <a href="#" class="text work__cta"><i class="fa fa-globe"></i> See it live</a>
-      <a href="#" class="text work__cta"><i class="fa fa-github"></i> See the code</a>
+      <a href="#" class="text work__cta"><i class="fab fa-github"></i> See the code</a>
     </div>  
     </div>
   </div>
@@ -190,7 +190,7 @@
         <li>Accountable for capacity management and planning intra-day activities across large teams of Pension Administrators</li>
         <li>Responsible for metric reporting across the Pensions department, acting as the contact point between NHS Pensions and the Department of Health</li>
         <li>Absorbed Team Leadership responsibilities for a Pension Administration team (20 staff) for Quotation production. Within 3 months, improved turnaround times from 90 days to 3 days, implemented development plans to negate skills gaps, reduced resourcing requirement by 15% and improved accuracy to compliance legislation</li>
-        <li>Realigned the 15% resource reduction into profit generation activities, generating 300k per year from additional activties.</li>
+        <li>Realigned the 15% resource reduction into profit generation activities, generating 300k per year from additional activity.</li>
       </ul>
     </div>
     </div>
@@ -202,13 +202,14 @@
     <h2 class="heading contact__heading">Contact</h2>
     <h3 class="heading">Let's talk.</h3>
     <h4 class="heading">Have a project in mind, or just want a chat.</h4>
-    <form action="mailto:marcjoyce90@googlemail.com" method="GET">
+    <form action="http://127.0.0.1:5501/contact_form_handler.php" method="post" name="contact_form">
       <label for="name">Name *</label>
       <input class="text" name="name" type="text" required>
+      <label for="email">Email *</label>
+      <input class="text" name="email" type="email" required>
       <label for="message"> Message *</label>
-      <textarea class="text" name="message" required></textarea>
+      <textarea class="text" name="body" required></textarea>
       <input type="submit" value="Send Message">
-      <p class="text submit__warning">pressing send message will open an email in your default email provider</p>
     </form>
   </div>
   <div class="about__section contact__container">
@@ -230,5 +231,16 @@
   </div>
 </section>
 
+<footer>
+  <a class="footer__logo" href="#hero"><img src="" alt="logo"><p>Go to top</p></a>
+  <div class="footer__socials__container">
+    <ul>
+      <li><a class="text" href="https://www.linkedin.com/in/marcjoyce501/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a class="text" href="https://github.com/MarcJoyce/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a class="text" onclick="toggleContactMenu()">Contact</a></li>
+    </ul>
+  </div>
+  <p class="copyright text">© <span id="copyright__year"></span> Marc Joyce - <a href="#" onclick="toggleContactMenu()">Get in touch</a></p>
+</footer>
 </body>
 </html>
