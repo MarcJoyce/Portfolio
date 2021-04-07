@@ -7,10 +7,7 @@
   <!-- Link to CSS file -->
   <link rel="stylesheet" href="styles.css">
   <!-- Link to FontAwesome CDN -->
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <!-- Link to JS file -->
 <script src="app.js" defer></script>
   <title>Marc Joyce | Web Developer</title>
@@ -27,7 +24,7 @@
       <ul>
         <li><a class="text" href="#work">Case Studies</a></li>
         <li><a class="text" href="#experience">Experience</a></li>
-        <li><a class="text" href="">Contact</a></li>
+        <li><a class="text" href="#" onclick="toggleContactMenu()">Contact</a></li>
         <li onclick="toggleDarkMode()"><i class="text fa fa-adjust"></i></li>
       </ul>
     </div>
@@ -38,13 +35,13 @@
   <div class="main__container">
     <h2 class="name heading">Marc Joyce</h2>
     <h1 class="title text">Web and Mobile Developer</h1>
-    <a href="#" class="cta text">Contact Me</a>
+    <a href="#" class="cta text" onclick="toggleContactMenu()">Contact Me</a>
   </div>
 
   <div class="socials__container">
     <ul>
-      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-      <li><a href=""><i class="fa fa-github"></i></a></li>
+      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+      <li><a href=""><i class="fab fa-github"></i></a></li>
       <li><a href=""><i class="fa fa-envelope"></i></a></li>
     </ul>
   </div>
@@ -126,10 +123,23 @@
       <h4 class="heading company__name">Manchester University NHS Foundation Trust</h4>
       <h6 class="heading company__description">Manchester University NHS Foundation Trust is an NHS Acute Foundation Trust which operates 10 hospitals throughout Greater Manchester. It is the largest NHS trust in the United Kingdom, with an income of £1.6bn and over 22,000 employees</h6>
       <ul class="text company__achievements">
-        <li>Accountable for delivery of all scheduled informatics activity ( + returns per annum)</li>
+        <li>Accountable for delivery of all scheduled informatics activity (Over 51,000 reports per annum)</li>
         <li>Designed, created and implemented a CRUD application Service Catalogue, integrating KPI and SLA management with stakeholders, reducing micromanagement of service and increasing accountability of analysts</li>
         <li>Managed Trust merger activities when MFT acquired North Manchester General Hospital(NMGH) in April 21</li>
         <li>Transformed COVID19 reporting production from wholly manual to automated solution, decreasing resource requirement by 50%</li>
+      </ul>
+    </div>
+  </div>
+    <div class="experience">
+      <div class="experience__position">
+        <h4 class="heading job__timeframe">August 19</h4>
+      </div>
+      <div class="experience__info">
+        <h4 class="heading job__title">Web Developer</h4>
+      <h4 class="heading company__name">Freelance</h4>
+      <h6 class="heading company__description">Transitioned my part-time hobby of creating web designs and applications into commercial experience</h6>
+      <ul class="text company__achievements">
+
       </ul>
     </div>
   </div>
@@ -191,22 +201,28 @@
     <h4 class="heading">Have a project in mind, or just want a chat.</h4>
     <form action="mailto:marcjoyce90@googlemail.com" method="GET">
       <label for="name">Name *</label>
-      <input name="name" type="text" required>
+      <input class="text" name="name" type="text" required>
       <label for="message"> Message *</label>
-      <textarea name="message" required></textarea>
+      <textarea class="text" name="message" required></textarea>
       <input type="submit" value="Send Message">
       <p class="text submit__warning">pressing send message will open an email in your default email provider</p>
     </form>
   </div>
   <div class="about__section contact__container">
+    <div class="close__contact__section" onclick="toggleContactMenu()"><i class="fas fa-times"></i></div>
     <h2 class="heading about__heading">About</h2>
     <h3 class="heading">Hello There.</h3>
     <h4 class="heading">Learn more about me.</h4>
-    <p class="text">Hi, I'm Marc, a North-West UK based, web designer and front-end developer focussed on creating clean & user-friendly experiences.</p>
-    <p class="text">I am passionate about building excellent software that enhances the lives of those around me.</p>
-<p class="text">When I'm not working, learning new technologies or working on a project; I'll be annoying my family with Star Wars memes, gaming (mostly Final Fantasy or the Total War series) or watching football</p>
+    <p class="text">Hi, I'm <strong>Marc</strong>, a North-West UK based, <strong>Web designer</strong> and <strong>Front-end Developer</strong> focussed on creating clean & user-friendly experiences.</p>
+    <p class="text">I am <strong>passionate</strong> about building excellent software that <strong>enhances the lives of those around me</strong>, working with people to help them make their <strong>dreams a reality</strong>.</p>
+<p class="text">When I'm not working, learning new technologies or working on a project; I'll be annoying my family with Star Wars memes, gaming (mostly Final Fantasy or the Total War series) or watching football.</p>
 <div class="technologies__container">
-
+  <i class="fab fa-html5"><p>HTML-5</p></i>
+  <i class="fab fa-css3-alt"><p>CSS3</p></i>
+  <i class="fab fa-js-square"><p>Javascript</p></i>
+  <i class="fab fa-react"><p>React</p></i>
+  <i class="fab fa-node-js"><p>Node</p></i>
+  <i class="fas fa-laptop-code"><p>UI/UX</p></i>
 </div>
   </div>
 </section>
