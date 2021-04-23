@@ -17,44 +17,44 @@
 </head>
 <body class="">
 
-  <header id="header">
+<header id="header">
   <nav>
-    <a href="#">
-      <img src="/assets/LOGO.svg" alt="MJ Logo" class="logo"/>
+    <a href="/">
+      <img src="/assets/LOGO.svg" alt="MJ Logo"/>
     </a>
 
-    <div class="menu__container">
       <ul>
         <li><a class="text" href="#work">Case Studies</a></li>
         <li><a class="text" href="#experience">Experience</a></li>
-        <li><a class="text" href="#" onclick="toggleContactMenu()">Contact</a></li>
+        <li class="text" onclick="toggleContactMenu()">Contact</a></li>
         <li onclick="toggleDarkMode()"><i class="text fa fa-adjust"></i></li>
       </ul>
-    </div>
   </nav>
 </header>
 
-<main id="hero">
-  <div class="main__container">
-    <h2 class="name heading">Marc Joyce</h2>
-    <h1 class="title text">Front-end Developer</h1>
-    <a href="#" class="cta text" onclick="toggleContactMenu()">Contact Me</a>
+ <main id="hero">
+  <div class="content__container">
+    <h1 class="heading">Marc Joyce</h1>
+    <h2 class="text">Front-end Developer</h2>
+    <div class="btn__container">
+      <div class="btn text" onclick="toggleContactMenu()">Contact Me</div>
+      <div class="btn text" onclick="">Download CV</div>
+    </div>
   </div>
 
-  <div class="socials__container">
+  <div class="social__container">
     <ul>
-      <li><a class="text" href="https://www.linkedin.com/in/marcjoyce501/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></li>
-      <li><a class="text" href="https://github.com/MarcJoyce/" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
-      <li><a class="text" onclick="toggleContactMenu()"><i class="fa fa-envelope"></i></a></li>
+      <li><a class="icon" href="https://www.linkedin.com/in/marcjoyce501/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></li>
+      <li><a class="icon" href="https://github.com/MarcJoyce/" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
+      <li class="icon" onclick="toggleContactMenu()"><i class="fa fa-envelope"></i></li>
     </ul>
   </div>
     
-  <a href="#work" class="cta__link"></a>
-
-    <img src="/assets/LOGO.svg" alt="MJ Logo" class="background__logo"/>
+  <a href="#work" class="main__cta"></a>
+  <img src="/assets/LOGO.svg" alt="MJ Logo" class="background__logo"/>
 </main>
 
-<section id="work">
+<!--<section id="work">
   <h2 class="heading section__title">Case Studies</h2>
   <h4 class="heading section__subtitle">My Latest work</h4>
   <div class="container"></div>
@@ -150,12 +150,18 @@
     <h3 class="heading">Let's talk.</h3>
     <h4 class="heading">Have a project in mind, or just want a chat.</h4>
     <form action="http://127.0.0.1:5501/contact_form_handler.php" method="post" name="contact_form">
-      <label for="name">Name *</label>
+    <div> 
       <input class="text" name="name" type="text" required>
-      <label for="email">Email *</label>
+      <label for="name" class="text">Name</label>
+    </div>
+    <div>
       <input class="text" name="email" type="email" required>
-      <label for="message"> Message *</label>
+      <label for="email" class="text">Email</label>
+    </div>
+    <div>  
       <textarea class="text" name="body" required></textarea>
+      <label for="body" class="text"> Message</label>
+    </div>
       <input type="submit" value="Send Message">
     </form>
   </div>
@@ -188,6 +194,6 @@
     </ul>
   </div>
   <p class="copyright text">© <span id="copyright__year"></span> Marc Joyce - <a href="#" onclick="toggleContactMenu()">Get in touch</a></p>
-</footer>
+</footer> -->
 </body>
 </html>
