@@ -1,0 +1,42 @@
+export const WORK_ITEMS = [
+  {
+    title: "Father and Son The Karaoke Kings",
+    heading: "Musical duo website",
+    role: "Designer / Developer",
+    blurb: "",
+    githubRepo: "https://github.com/MarcJoyce/Father-and-Son-Karaoke",
+    websiteLink: "https://www.fatherandsonthekaraokekings.com",
+    subTitle: "",
+    image: "/assets/fask/image.png",
+  },
+  {
+    title: "MERN Memories project",
+    heading: "Social Media clone project",
+    role: "Side project",
+    blurb: "",
+    githubRepo: "https://github.com/MarcJoyce/MERN-Project",
+    websiteLink: "https://marcjoyce.github.io/MERN-Project/",
+    subTitle: "",
+    image: "/assets/memories/image.png",
+  },
+  {
+    title: "Disney Plus",
+    heading: "Clone of Disney Plus Application",
+    role: "Side project",
+    blurb: "",
+    githubRepo: "https://github.com/MarcJoyce/disney-plus-clone",
+    websiteLink: "https://disneyplusclone-c8834.web.app/",
+    subTitle: "",
+    image: "/assets/disney/image.png",
+  },
+  // {
+  //   title: "Amazon Website",
+  //   heading: "Clone of Amazon",
+  //   role: "Side project",
+  //   blurb: "",
+  //   githubRepo: "https://github.com/MarcJoyce/Amazon-Clone",
+  //   websiteLink: "https://marcjoyce.github.io/Amazon-Clone/",
+  //   subTitle: "",
+  //   image: "/assets/amazon/image.png",
+  // }
+]
