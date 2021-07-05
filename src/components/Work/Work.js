@@ -15,7 +15,7 @@ function Work() {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("/assets/svgBackground.svg");
+  background: url("Portfolio/assets/svgBackground.svg");
   padding: 100px;
   `;
 
