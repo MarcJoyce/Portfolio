@@ -7,7 +7,7 @@ export const WORK_ITEMS = [
     githubRepo: "https://github.com/MarcJoyce/Father-and-Son-Karaoke",
     websiteLink: "https://www.fatherandsonthekaraokekings.com",
     subTitle: "",
-    image: "/assets/fask/image.png",
+    image: "Portfolio/assets/fask/image.png",
   },
   {
     title: "MERN Memories project",
@@ -17,7 +17,7 @@ export const WORK_ITEMS = [
     githubRepo: "https://github.com/MarcJoyce/MERN-Project",
     websiteLink: "https://marcjoyce.github.io/MERN-Project/",
     subTitle: "",
-    image: "/assets/memories/image.png",
+    image: "Portfolio/assets/memories/image.png",
   },
   {
     title: "Disney Plus",
@@ -27,7 +27,7 @@ export const WORK_ITEMS = [
     githubRepo: "https://github.com/MarcJoyce/disney-plus-clone",
     websiteLink: "https://disneyplusclone-c8834.web.app/",
     subTitle: "",
-    image: "/assets/disney/image.png",
+    image: "Portfolio/assets/disney/image.png",
   },
   // {
   //   title: "Amazon Website",
@@ -37,7 +37,7 @@ export const WORK_ITEMS = [
   //   githubRepo: "https://github.com/MarcJoyce/Amazon-Clone",
   //   websiteLink: "https://marcjoyce.github.io/Amazon-Clone/",
   //   subTitle: "",
-  //   image: "/assets/amazon/image.png",
+  //   image: "Portfolio/assets/amazon/image.png",
   // }
 ]
 

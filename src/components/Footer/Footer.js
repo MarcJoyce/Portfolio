@@ -74,7 +74,7 @@ function Footer() {
   return (
     <Container id="contact">
       <Logo href="https://www.marcjoyce.com" aria-label="Marc Joyce Website">
-        <img src="/assets/logo.svg" alt="Logo"/>
+        <img src="Portfolio/assets/logo.svg" alt="Logo"/>
       </Logo>
       <div>
         <p>Quick links</p>
