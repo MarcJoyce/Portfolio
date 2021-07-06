@@ -65,7 +65,7 @@ function Nav() {
   return (
     <Container>
         <a href="https://www.marcjoyce.com" aria-label="Marc Joyce website">
-          <img src="Portfolio/assets/logo.svg" alt="logo svg" />
+          <img src="/assets/logo.svg" alt="logo svg" />
         </a>        
       <ul>
         <li><a href="#hero">Home</a></li>

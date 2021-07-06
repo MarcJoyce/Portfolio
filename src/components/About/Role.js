@@ -74,7 +74,7 @@ function Role({index, role}) {
                 <h5>{role.role}</h5>
                 <h6>{role.employer}</h6>
               </div>
-                <img src="Portfolio/assets/chevron.svg" alt="chevron" onClick={handleChevron}/>
+                <img src="/assets/chevron.svg" alt="chevron" onClick={handleChevron}/>
               </div>
               <ul>
                 {role.responsibilities.map((responsibility, index) => {
