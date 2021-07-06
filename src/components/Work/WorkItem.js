@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+import LazyImage from './LazyImage'
+
 function WorkItem({title, image, heading, live, github}) {
   const Container = styled.div`
     width: 100%;
     max-width: 800px;
-    min-height: 400px;
-    margin: 50px 0;
+    margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +15,7 @@ function WorkItem({title, image, heading, live, github}) {
     position: relative;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    padding: 75px 0;
 
     h4 {
       font-size: 24px;
@@ -36,14 +38,9 @@ function WorkItem({title, image, heading, live, github}) {
   }
 `
 const ImageContainer = styled.div`
-  height: auto;
-  min-height: 400px;
+  height: 100%;
   width: 100%;
   position: absolute;
-  background-image: url('${image}');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   transition: all 1s ease;
 
   span {
@@ -51,7 +48,7 @@ const ImageContainer = styled.div`
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    z-index: 10;
   }  
 
 }
@@ -85,6 +82,11 @@ display: flex;
   return (
     <Container>
       <ImageContainer>
+        <LazyImage 
+            image={image}
+            placeholder="assets/placeholder.png" 
+            title={title}
+          />
         <span></span>
       </ImageContainer>
         <h4>{title}</h4>
