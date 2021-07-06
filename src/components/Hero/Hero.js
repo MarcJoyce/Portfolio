@@ -16,6 +16,25 @@ function Hero() {
     height: 100%;
     width: 100%;
     z-index: -1;
+
+    div {
+      position: absolute;
+      width: 25vmin; 
+      height: 25vmin;
+      background: linear-gradient(to bottom, #C84A22, #F3B94B);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    div:nth-child(1) {
+      top: 22.5%;
+      left: 60%;
+    }
+
+    div:nth-child(2) {
+      top: 45%;
+      left: 75%;
+    }
   `;
 
   const Content = styled.div`
@@ -27,9 +46,12 @@ function Hero() {
     
     h1 {
       font-size: 15vmin;
-      color: white;
+      background: linear-gradient(to right, #1A237E, #3949AB);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       margin-bottom: 20px;
       font-weight: bold;
+      
     }
 
     h2 {
@@ -96,7 +118,8 @@ function Hero() {
   return (
     <Container id="hero">
       <Background>
-
+        <div></div>
+        <div></div>
       </Background>
       <Content>
         <h1>
