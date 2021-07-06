@@ -52,17 +52,37 @@ function Role({index, role}) {
     transition: all 0.3s ease;
   }
 
-    li, a {
+    li {
       color: white;
       font-size: 14px;
       letter-spacing: 1.2px;
       font-weight: 200;
+      padding: 5px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      :nth-child(1) {
+        border-top: none;
+      }
     }
 
     a {
       color: #398fef;
     }
 
+@media only screen and (max-width: 768px) {
+  h5 {
+  font-size: 20px;
+  }
+
+  h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+    li, a {
+      font-size: 12px;
+    }
+}
   `;
 
   

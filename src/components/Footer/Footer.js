@@ -5,7 +5,7 @@ import SocialIcon from "../Social/SocialIcon.js";
 function Footer() {
   const Container = styled.footer`
     position: relative;
-    padding: 100px;
+    padding: 50px 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -55,12 +55,24 @@ function Footer() {
       }
     }
     }
+
+    @media only screen and (max-width: 768px) {
+      div p {
+        font-size: 16px;
+      }
+    }
   `;
 
   const Logo = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      img {
+        transform: scale(0.5);
+      }
+    }
   `;
 
   const Copyright = styled.p`

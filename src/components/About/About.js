@@ -9,7 +9,7 @@ function About() {
 
   const Container = styled.section`
     min-height: 400px;
-    padding: 200px 20%;
+    padding: 100px 5%;
 
     h3 {
       font-size: 48px;
@@ -65,7 +65,7 @@ function About() {
           )
       })}
        
-      <p>
+      {/* <p>
         My technology skills are aligned to Javascript, working with the MERN
         stack (MongoDB, Express.js, React.js and Node.js). My preference leans towards working on Front-end, taking advantage of the great utility and freedom that React gives, utilising the latest technologies within my work.
         <br />
@@ -82,7 +82,7 @@ function About() {
         quality in each of my roles. I have developed members of my team through
         personal development plans and seen many of them progress into senior
         roles.
-      </p>
+      </p> */}
     </Container>
   );
 }

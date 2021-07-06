@@ -11,7 +11,7 @@ function Nav() {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 5%;
   background-color: #1c1d25;
   z-index: 100;
 
@@ -60,6 +60,27 @@ function Nav() {
     }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 5%;  
+
+    a {
+      width: 50px;
+    
+      img {
+        transform: scale(0.25);
+      }
+    }
+
+    ul li {
+      margin: 0 0 0 15px;
+    }
+
+    ul li a {
+      font-size: 14px;
+    }
+  }
+
   `;
   
   return (

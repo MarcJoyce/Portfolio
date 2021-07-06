@@ -3,30 +3,30 @@ import styled from "styled-components";
 
 function WorkItem({title, image, heading, live, github}) {
   const Container = styled.div`
-    width: 50%;
+    width: 100%;
+    max-width: 800px;
     min-height: 400px;
     margin: 50px 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
     position: relative;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 
     h4 {
-      position: absolute;
       font-size: 24px;
       color: white;
-      margin-left: 10%;
+      margin-left: 5%;
       z-index: 10;
     }
 
     p {
-      position: absolute;
       font-size: 16px;
       color: white;
       font-style: italic;
-      margin-left: 10%;
-      transform: translateY(100%);
+      margin: 0 0 5% 5%;
       z-index: 10;
     }
 
@@ -50,7 +50,7 @@ const ImageContainer = styled.div`
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }  
 
@@ -58,22 +58,21 @@ const ImageContainer = styled.div`
 `;
 
 const LinkContainer = styled.div`
-position: absolute;
-width: 50%;
-margin-left: 10%;
+width: 100%;
+margin-left: 5%;
 display: flex;
 
       a {
-        font-size: 16px;
+        font-size: 12px;
         color: white;
         font-style: italic;
         padding: 10px 20px;
         border: 1px solid white;
-        transform: translateY(200%);
         z-index: 10;
         margin: 10px;
         cursor: pointer;
         transition: all 0.3s ease;
+        font-weight: bold;
   
         &:hover {
           background-color: white;

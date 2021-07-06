@@ -26,14 +26,14 @@ function Hero() {
     transform: translateY(-50%);
     
     h1 {
-      font-size: 5rem;
+      font-size: 15vmin;
       color: white;
       margin-bottom: 20px;
       font-weight: bold;
     }
 
     h2 {
-      font-size: 1.25em;
+      font-size: 5vmin;
       font-style: italic;
       color: white;
       font-weight: normal;

@@ -16,7 +16,7 @@ function Work() {
   flex-direction: column;
   align-items: center;
   background: url("/assets/svgBackground.svg");
-  padding: 100px;
+  padding: 100px 5%;
   `;
 
   const TitleContainer = styled.div`
@@ -30,7 +30,7 @@ function Work() {
     margin-bottom: 20px;
   }
   h4 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
   }
   `;
@@ -41,7 +41,7 @@ function Work() {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 5%;
   `;
   
   return (
