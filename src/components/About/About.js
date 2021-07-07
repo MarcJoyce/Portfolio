@@ -9,7 +9,11 @@ function About() {
 
   const Container = styled.section`
     min-height: 400px;
-    padding: 100px 5%;
+    padding: 100px 20%;
+
+    @media only screen and (max-width: 768px) {
+      padding: 100px 5%;
+    }
 
     h3 {
       font-size: 48px;

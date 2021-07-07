@@ -50,6 +50,7 @@ function Role({index, role}) {
     height: ${activeChevron ? 'fit-content' : '0'};
     overflow: hidden;
     transition: all 0.3s ease;
+    margin-top: ${activeChevron ? '25px' : '0'}
   }
 
     li {
@@ -88,13 +89,13 @@ function Role({index, role}) {
   
   return (
       <Container key={index}>
-              <div>
-              <div>
-                <p>{role.startDate}</p>
-                <h5>{role.role}</h5>
-                <h6>{role.employer}</h6>
-              </div>
-                <img src="/assets/chevron.svg" alt="chevron" onClick={handleChevron}/>
+              <div onClick={handleChevron}>
+                <div>
+                  <p>{role.startDate}</p>
+                  <h5>{role.role}</h5>
+                  <h6>{role.employer}</h6>
+                </div>
+                <img src="/assets/chevron.svg" alt="chevron" />
               </div>
               <ul>
                 {role.responsibilities.map((responsibility, index) => {
