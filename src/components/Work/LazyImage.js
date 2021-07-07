@@ -5,7 +5,7 @@ function LazyImage({image, placeholder, title}) {
   
   const [imageSrc, setImageSrc] = useState(placeholder);
 
-  useEffect((image) => {
+  useEffect(() => {
     setImageSrc(image);
   }, [])
   
@@ -17,7 +17,7 @@ function LazyImage({image, placeholder, title}) {
   `;
 
   return (
-    <Image src={imageSrc} alt={title} />
+    <Image src={imageSrc || placeholder} alt={title} />
   )
 }
 
