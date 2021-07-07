@@ -18,6 +18,7 @@ function Role({index, role}) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 
     div {
       flex-direction: column;
