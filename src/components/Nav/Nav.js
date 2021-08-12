@@ -3,7 +3,23 @@ import styled from 'styled-components'
 
 function Nav() {
   
-  const Container = styled.header`
+  
+  
+  return (
+    <Container>
+        <a href="https://www.marcjoyce.com" aria-label="Marc Joyce website">
+          <img src="/assets/logo.svg" alt="logo svg" />
+        </a>        
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </Container>
+  )
+}
+
+const Container = styled.header`
   width: 100%;
   height: 10vh;
   position: fixed;
@@ -84,20 +100,6 @@ function Nav() {
   }
 
   `;
-  
-  return (
-    <Container>
-        <a href="https://www.marcjoyce.com" aria-label="Marc Joyce website">
-          <img src="/assets/logo.svg" alt="logo svg" />
-        </a>        
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </Container>
-  )
-}
 
 export default Nav
  

@@ -8,7 +8,35 @@ import { WORK_ITEMS } from '../../constants/constants'
 function Work() {
   const workItems = WORK_ITEMS;
 
-  const Container = styled.section`
+  return (
+    <Container id="work">
+      <TitleContainer>
+      <h3>
+        Work
+      </h3>
+      <h4>
+        Check out my latest work
+      </h4>
+      </TitleContainer>
+      <WorkContainer>
+        {workItems.map((item, index) => {
+          return (
+            <WorkItem 
+              key={index}
+              title={item.title}
+              heading={item.heading}
+              image={item.image} 
+              live={item.websiteLink}
+              github={item.githubRepo}             
+            />   
+          )
+        })}
+      </WorkContainer>
+    </Container>
+)
+}
+
+const Container = styled.section`
   position: relative;
   width: 100%;
   min-height: 400px;
@@ -43,33 +71,5 @@ function Work() {
   align-items: center;
   margin: 5%;
   `;
-  
-  return (
-    <Container id="work">
-      <TitleContainer>
-      <h3>
-        Work
-      </h3>
-      <h4>
-        Check out my latest work
-      </h4>
-      </TitleContainer>
-      <WorkContainer>
-        {workItems.map((item, index) => {
-          return (
-            <WorkItem 
-              key={index}
-              title={item.title}
-              heading={item.heading}
-              image={item.image} 
-              live={item.websiteLink}
-              github={item.githubRepo}             
-            />   
-          )
-        })}
-      </WorkContainer>
-    </Container>
-)
-}
 
 export default Work

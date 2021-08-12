@@ -4,7 +4,28 @@ import styled from "styled-components";
 import LazyImage from './LazyImage'
 
 function WorkItem({title, image, heading, live, github}) {
-  const Container = styled.div`
+
+  return (
+    <Container>
+      <ImageContainer>
+        <LazyImage 
+            image={image}
+            placeholder="assets/placeholder.png" 
+            title={title}
+          />
+        <span></span>
+      </ImageContainer>
+        <h4>{title}</h4>
+        <p>{heading}</p>
+        <LinkContainer>
+          <a href={live} rel="noreferrer" aria-label={title}>See Live</a>
+          <a href={github} rel="noreferrer" aria-label={title}>Github Code</a>
+        </LinkContainer>
+    </Container>
+  );
+}
+
+const Container = styled.div`
     width: 100%;
     max-width: 800px;
     margin: 25px;
@@ -78,25 +99,5 @@ display: flex;
         }
       }
 `;
-
-  return (
-    <Container>
-      <ImageContainer>
-        <LazyImage 
-            image={image}
-            placeholder="assets/placeholder.png" 
-            title={title}
-          />
-        <span></span>
-      </ImageContainer>
-        <h4>{title}</h4>
-        <p>{heading}</p>
-        <LinkContainer>
-          <a href={live} rel="noreferrer" aria-label={title}>See Live</a>
-          <a href={github} rel="noreferrer" aria-label={title}>Github Code</a>
-        </LinkContainer>
-    </Container>
-  );
-}
 
 export default WorkItem;

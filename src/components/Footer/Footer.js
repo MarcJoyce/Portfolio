@@ -3,7 +3,57 @@ import styled from "styled-components";
 import SocialIcon from "../Social/SocialIcon.js";
 
 function Footer() {
-  const Container = styled.footer`
+
+  return (
+    <Container id="contact">
+      <Logo href="https://www.marcjoyce.com" aria-label="Marc Joyce Website">
+        <img src="/assets/logo.svg" alt="Logo"/>
+      </Logo>
+      <div>
+        <p>Quick links</p>
+        <ul>
+          <li>
+            <a href="#hero">Home</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          {/* <li>
+            <a href="#">Fun</a>
+          </li> */}
+        </ul>
+      </div>
+      <div>
+        <p>Get in touch</p>
+        <ul>
+          <li>
+            <SocialIcon
+              icon="linkedin"
+              link="https://www.linkedin.com/in/marcjoyce501/"
+            />
+          </li>
+          <li>
+            <SocialIcon
+              icon="github"
+              link="https://www.github.com/MarcJoyce/"
+            />
+          </li>
+          <li>
+            <SocialIcon icon="email" link="mailto:marcjoyce90@googlemail.com" />
+          </li>
+        </ul>
+      </div>
+      <Copyright>
+        © {new Date().getFullYear()} Marc Joyce
+      </Copyright>
+    </Container>
+  );
+}
+
+const Container = styled.footer`
     position: relative;
     padding: 50px 0;
     width: 100%;
@@ -87,54 +137,5 @@ function Footer() {
   transform: translate(-50%, -50%);
   color: #F3F3F3;
   `;
-
-  return (
-    <Container id="contact">
-      <Logo href="https://www.marcjoyce.com" aria-label="Marc Joyce Website">
-        <img src="/assets/logo.svg" alt="Logo"/>
-      </Logo>
-      <div>
-        <p>Quick links</p>
-        <ul>
-          <li>
-            <a href="#hero">Home</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          {/* <li>
-            <a href="#">Fun</a>
-          </li> */}
-        </ul>
-      </div>
-      <div>
-        <p>Get in touch</p>
-        <ul>
-          <li>
-            <SocialIcon
-              icon="linkedin"
-              link="https://www.linkedin.com/in/marcjoyce501/"
-            />
-          </li>
-          <li>
-            <SocialIcon
-              icon="github"
-              link="https://www.github.com/MarcJoyce/"
-            />
-          </li>
-          <li>
-            <SocialIcon icon="email" link="mailto:marcjoyce90@googlemail.com" />
-          </li>
-        </ul>
-      </div>
-      <Copyright>
-        © {new Date().getFullYear()} Marc Joyce
-      </Copyright>
-    </Container>
-  );
-}
 
 export default Footer;

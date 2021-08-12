@@ -7,11 +7,7 @@ import styled from 'styled-components';
 
 function SocialIcon({ icon, link }) {
 
-  const Icon = styled.a`
-    svg {
-      font-size: 32px;
-    }
-  `;
+ 
 
   const iconSelector = (icon) => {
     switch(icon) {
@@ -32,5 +28,11 @@ function SocialIcon({ icon, link }) {
     </Icon>
   )
 }
+
+const Icon = styled.a`
+svg {
+  font-size: 32px;
+}
+`;
 
 export default SocialIcon

@@ -1,16 +1,37 @@
-import React, { useState } from 'react'
-import styled  from 'styled-components'
+import React, { memo, useState } from "react";
+import styled from "styled-components";
 
-
-function Role({index, role}) {
-
+function Role({ role }) {
   const [activeChevron, setActiveChevron] = useState(false);
 
   const handleChevron = () => {
     setActiveChevron(!activeChevron);
-  }
-  
-  const Container = styled.div`
+  };
+
+  return (
+    <Container>
+      <div onClick={handleChevron}>
+        <div>
+          <p>{role.startDate}</p>
+          <h5>{role.role}</h5>
+          <h6>{role.employer}</h6>
+        </div>
+        <img
+          src="/assets/chevron.svg"
+          alt="chevron"
+          className={activeChevron ? "active" : ""}
+        />
+      </div>
+      <ul className={activeChevron ? "active" : ""}>
+        {role.responsibilities.map((responsibility, index) => {
+          return <li key={responsibility}>{responsibility}</li>;
+        })}
+      </ul>
+    </Container>
+  );
+}
+
+const Container = styled.div`
 
   margin: 25px; 0;
 
@@ -28,8 +49,13 @@ function Role({index, role}) {
     img {
       height: 25px;
       width: 25px;
-      transform: ${activeChevron ? 'rotate(270deg)' : 'rotate(90deg)'};
+      transform: rotate(90deg);
       cursor: pointer;
+      transition: 0.3s all ease;
+    }
+
+    img.active {
+      transform: rotate(270deg);
     }
   }
   
@@ -48,10 +74,13 @@ function Role({index, role}) {
   }
 
   ul {
-    height: ${activeChevron ? 'auto' : '0'};
+    height: 0;
     overflow: hidden;
-    transition: all 0.3s ease;
-    margin-top: ${activeChevron ? '25px' : '0'};
+    transition: 0.3s all ease;
+  }
+
+  ul.active {
+    height: auto;
   }
 
     li {
@@ -87,26 +116,4 @@ function Role({index, role}) {
 }
   `;
 
-  
-  return (
-      <Container key={index}>
-              <div onClick={handleChevron}>
-                <div>
-                  <p>{role.startDate}</p>
-                  <h5>{role.role}</h5>
-                  <h6>{role.employer}</h6>
-                </div>
-                <img src="/assets/chevron.svg" alt="chevron" />
-              </div>
-              <ul className={activeChevron ? "active" : ""}>
-                {role.responsibilities.map((responsibility, index) => {
-                  return (
-                    <li key={index}>{responsibility}</li>
-                  )
-                })}
-              </ul>
-            </Container>
-  )
-}
-
-export default Role
+export default memo(Role);

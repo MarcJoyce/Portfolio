@@ -3,7 +3,36 @@ import styled from 'styled-components'
 
 
 function Hero() {
-  const Container = styled.section`
+  
+  
+  return (
+    <Container id="hero">
+      <Background>
+        <div></div>
+        <div></div>
+      </Background>
+      <Content>
+        <h1>
+          Marc Joyce
+        </h1>
+        <h2> 
+          Front-end Developer
+        </h2>
+
+        <CallToAction>
+          <a href="#about" aria-label="about me">About Me</a>
+        </CallToAction>
+
+      </Content>
+
+      <ToWork href="#work">
+        <p>work</p>
+      </ToWork>
+    </Container>
+  )
+}
+
+const Container = styled.section`
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -114,32 +143,5 @@ function Hero() {
       }
     }
   `;
-  
-  return (
-    <Container id="hero">
-      <Background>
-        <div></div>
-        <div></div>
-      </Background>
-      <Content>
-        <h1>
-          Marc Joyce
-        </h1>
-        <h2> 
-          Front-end Developer
-        </h2>
-
-        <CallToAction>
-          <a href="#about" aria-label="about me">About Me</a>
-        </CallToAction>
-
-      </Content>
-
-      <ToWork href="#work">
-        <p>work</p>
-      </ToWork>
-    </Container>
-  )
-}
 
 export default Hero
