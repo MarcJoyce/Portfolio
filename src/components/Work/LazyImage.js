@@ -7,7 +7,7 @@ function LazyImage({image, placeholder, title}) {
 
   useEffect(() => {
     setImageSrc(image);
-  }, [])
+  }, [image])
   
   const Image = styled.img`
     position: absolute;

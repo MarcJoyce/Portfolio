@@ -23,6 +23,8 @@ function Nav() {
   }
 
     img {
+      width: 100px;
+      height: 210px;
       transform: scale(0.3);
     }
   }

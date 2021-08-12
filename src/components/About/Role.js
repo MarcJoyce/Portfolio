@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
+import styled  from 'styled-components'
 
 
 function Role({index, role}) {
@@ -48,10 +48,10 @@ function Role({index, role}) {
   }
 
   ul {
-    height: ${activeChevron ? 'fit-content' : '0'};
+    height: ${activeChevron ? 'auto' : '0'};
     overflow: hidden;
     transition: all 0.3s ease;
-    margin-top: ${activeChevron ? '25px' : '0'}
+    margin-top: ${activeChevron ? '25px' : '0'};
   }
 
     li {
@@ -98,7 +98,7 @@ function Role({index, role}) {
                 </div>
                 <img src="/assets/chevron.svg" alt="chevron" />
               </div>
-              <ul>
+              <ul className={activeChevron ? "active" : ""}>
                 {role.responsibilities.map((responsibility, index) => {
                   return (
                     <li key={index}>{responsibility}</li>

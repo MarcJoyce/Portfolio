@@ -67,6 +67,8 @@ function Footer() {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 210px;
+    width: 100px;
 
     @media only screen and (max-width: 768px) {
       img {

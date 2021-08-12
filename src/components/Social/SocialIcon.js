@@ -5,7 +5,7 @@ import EmailIcon  from '@material-ui/icons/Email';
 
 import styled from 'styled-components';
 
-function SocialIcon(props) {
+function SocialIcon({ icon, link }) {
 
   const Icon = styled.a`
     svg {
@@ -27,8 +27,8 @@ function SocialIcon(props) {
   }
   
   return (
-    <Icon href={props.link} rel="noreferrer" target="_blank">
-      {iconSelector(props.icon)}
+    <Icon href={link} rel="noreferrer" target="_blank" aria-label={icon}>
+      {iconSelector(icon)}
     </Icon>
   )
 }
