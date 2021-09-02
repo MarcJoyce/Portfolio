@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 function Role({ role }) {
@@ -74,13 +74,15 @@ const Container = styled.div`
   }
 
   ul {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
+    margin-top: 10px;
+    padding: 0 2.5%;
     transition: 0.3s all ease;
   }
 
   ul.active {
-    height: auto;
+    max-height: 800px;
   }
 
     li {
@@ -116,4 +118,4 @@ const Container = styled.div`
 }
   `;
 
-export default memo(Role);
+export default Role;

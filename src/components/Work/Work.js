@@ -25,6 +25,7 @@ function Work() {
               key={index}
               title={item.title}
               heading={item.heading}
+              blurb={item.blurb}
               image={item.image} 
               live={item.websiteLink}
               github={item.githubRepo}             

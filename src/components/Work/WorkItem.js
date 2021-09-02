@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import LazyImage from './LazyImage'
 
-function WorkItem({title, image, heading, live, github}) {
+function WorkItem({title, image, blurb, heading, live, github}) {
 
   return (
     <Container>
@@ -17,6 +17,7 @@ function WorkItem({title, image, heading, live, github}) {
       </ImageContainer>
         <h4>{title}</h4>
         <p>{heading}</p>
+        <p>{blurb}</p>
         <LinkContainer>
           <a href={live} rel="noreferrer" aria-label={title}>See Live</a>
           <a href={github} rel="noreferrer" aria-label={title}>Github Code</a>
