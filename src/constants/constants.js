@@ -42,12 +42,12 @@ export const WORK_ITEMS = [
 ]
 
 export const WORK_EXPERIENCE = [
-  // {
-  //   startDate: "Oct 2021",
-  //   role: "Senior Frontend Engineer",
-  //   employer: "Morses Club",
-  //   responsibilities: [""]
-  // },
+  {
+    startDate: "Oct 2021",
+    role: "Senior Frontend Engineer",
+    employer: "Morses Club",
+    responsibilities: [""]
+  },
   {
     startDate: "Apr 2020",
     role: "Informatics Leadership Team",
