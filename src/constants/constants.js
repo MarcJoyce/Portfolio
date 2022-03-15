@@ -39,14 +39,18 @@ export const WORK_ITEMS = [
   //   subTitle: "",
   //   image: "/assets/amazon/image.png",
   // }
-]
+];
 
 export const WORK_EXPERIENCE = [
   {
     startDate: "Oct 2021",
     role: "Senior Frontend Engineer",
     employer: "Morses Club",
-    responsibilities: [""]
+    responsibilities: [
+      "Transitioned legacy PHP front end code into React",
+      "Streamlined front end production deployment through webpack bundling and gulp task automation",
+      "Redeveloped user dashboard to comply with financial banking legislation",
+    ],
   },
   {
     startDate: "Apr 2020",
@@ -56,18 +60,18 @@ export const WORK_EXPERIENCE = [
       "Leadership responsibility for 12 developers",
       "Designed and created a React CRUD application for scheduling statutory and regular activities (52k per year) integrating KPI and SLA management and incident reporting",
       "Transformed COVID19 reporting process from completely manual to automated solution, decreasing the resource requirement by 50%",
-    ]
+    ],
   },
   {
     startDate: "Aug 2019",
     role: "Developer",
-    employer: "",
+    employer: "Available for freelance work",
     responsibilities: [
       "Father and Son The Karaoke Kings - Website created for a father and son musical duo who planned to tackle lockdown in the UK by entertaining thousands across the globe",
       "The Little Bakery - Bakery website for local family run business",
       "Barbershop at the Mill - Website created for local barbershop",
-      "KR Photography - Redesign of website for local Photography studio"
-    ]
+      "KR Photography - Redesign of website for local Photography studio",
+    ],
   },
   {
     startDate: "May 2019",
@@ -77,8 +81,8 @@ export const WORK_EXPERIENCE = [
       "Leader for multi-functional teams including Pension Administration, Continuous Improvement and Development teams totalling 120+ team members",
       "Created self service suite of reporting function using React and data visualization libraries",
       "Achieved 99% delivery of annual statement production, increase of 4% on previous year",
-      "Project manager for Pension rectification of over 300,000 pensioners"
-    ]
+      "Project manager for Pension rectification of over 300,000 pensioners",
+    ],
   },
   {
     startDate: "Aug 2017",
@@ -88,8 +92,8 @@ export const WORK_EXPERIENCE = [
       "Project Manager for Pension Annual Events and leadership for team of developers",
       "Developed internal SLA management process for development team and introduced agile methodologies",
       "Created a Pension calculations system using React front-end and vanilla javascript back-end, taking input from users to perform complex calculations, meeting compliance regulations",
-      "Implemented career development programmes to enhance staff skills"
-    ]
+      "Implemented career development programmes to enhance staff skills",
+    ],
   },
   {
     startDate: "Nov 2008",
@@ -101,8 +105,7 @@ export const WORK_EXPERIENCE = [
       "Accountable for capacity management and planning intra-day activities across large teams of Pension Administrators",
       "Responsible for metric reporting across the Pensions department, acting as the contact point between NHS Pensions and the Department of Health",
       "Absorbed Team Leadership responsibilities for a Pension Administration team (20 staff) for Quotation production. Within 3 months, improved turnaround times from 90 days to 3 days, implemented development plans to negate skills gaps, reduced resourcing requirement by 15% and improved accuracy to compliance legislation",
-      "Realigned the 15% resource reduction into profit generation activities, generating 300k per year from additional activity"
-    ]
+      "Realigned the 15% resource reduction into profit generation activities, generating 300k per year from additional activity",
+    ],
   },
-
-]
+];

@@ -44,6 +44,7 @@ const Container = styled.div`
     div {
       flex-direction: column;
       align-items: flex-start;
+      gap: 5px;
     }
 
     img {
@@ -79,10 +80,13 @@ const Container = styled.div`
     margin-top: 10px;
     padding: 0 2.5%;
     transition: 0.3s all ease;
+    background-color: rgba(57, 143, 239,0.15);
+    border-radius: 8px;
   }
 
   ul.active {
     max-height: 800px;
+    padding: 1.25% 2.5%;
   }
 
     li {
