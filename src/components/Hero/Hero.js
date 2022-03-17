@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import HeroCanvas from '../HeroCanvas/HeroCanvas'
+
 
 function Hero() {
   
   
   return (
     <Container id="hero">
+      <HeroCanvas id="anim"/>
       <Background>
         <div></div>
         <div></div>
@@ -33,9 +36,19 @@ function Hero() {
 }
 
 const Container = styled.section`
+    height: 100vh;
     min-height: 100vh;
     width: 100%;
     position: relative;
+
+    canvas:first-child {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   `;
   
   const Background = styled.div`
@@ -48,8 +61,8 @@ const Container = styled.section`
 
     div {
       position: absolute;
-      width: 25vmin; 
-      height: 25vmin;
+      width: 20vmin; 
+      height: 20vmin;
       background: linear-gradient(to bottom, #C84A22, #F3B94B);
       border-radius: 50%;
       transform: translate(-50%, -50%);
@@ -80,7 +93,6 @@ const Container = styled.section`
       -webkit-text-fill-color: transparent;
       margin-bottom: 20px;
       font-weight: bold;
-      
     }
 
     h2 {

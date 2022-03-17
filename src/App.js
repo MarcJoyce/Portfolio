@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import Home from './components/Home/Home.js';
 
+
 function App() {
 
   const TRACKING_ID = 'UA-222888625-2';
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <Router>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Home} /> 
     </Router>
   )
 }

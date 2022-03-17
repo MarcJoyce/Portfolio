@@ -32,6 +32,7 @@ function SocialIcon({ icon, link }) {
 const Icon = styled.a`
 svg {
   font-size: 32px;
+  transition: 0.3s all ease;
 }
 `;
 

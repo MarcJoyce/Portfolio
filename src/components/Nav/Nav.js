@@ -60,6 +60,10 @@ const Container = styled.header`
       padding: 5px 0;
     }
 
+    a:hover {
+      color: #398fef;
+    }
+
     a:before {
       content: '';
       position: absolute;
@@ -67,7 +71,7 @@ const Container = styled.header`
       left: 50%;
       bottom: -10px;
       transform: translateX(-50%);
-      border-bottom: 2px solid #F3F3F3;
+      border-bottom: 2px solid #398fef;;
       opacity: 0;
       transition: all 0.3s ease;
     }

@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  user-select: none; 
 }
 
 html {

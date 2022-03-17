@@ -3,11 +3,10 @@ import styled from "styled-components";
 import SocialIcon from "../Social/SocialIcon.js";
 
 function Footer() {
-
   return (
     <Container id="contact">
       <Logo href="https://www.marcjoyce.com" aria-label="Marc Joyce Website">
-        <img src="/assets/logo.svg" alt="Logo"/>
+        <img src="/assets/logo.svg" alt="Logo" />
       </Logo>
       <div>
         <p>Quick links</p>
@@ -46,9 +45,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <Copyright>
-        © {new Date().getFullYear()} Marc Joyce
-      </Copyright>
+      <Copyright>© {new Date().getFullYear()} Marc Joyce</Copyright>
     </Container>
   );
 }
@@ -72,38 +69,27 @@ const Container = styled.footer`
         border-bottom: 1px solid rgba(255, 255, 255, 0.25);
         width: fit-content;
       }
-      ul {
-      display: flex;
-      flex-direction: column;
-
-      li {
-        margin: 5px 0;
       
-        a {
-          position: relative;
-          color: #F3F3F3;
-          font-size: 16px;
-          transition: all 0.3s ease;
-        }
+      ul {
+        display: flex;
+        flex-direction: column;
 
-        a:before {
-          content: '';
-          position: absolute;
-          width: 90%;
-          left: 50%;
-          bottom: -10px;
-          transform: translateX(-50%);
-          border-bottom: 2px solid #F3F3F3;
-          opacity: 0;
-          transition: all 0.3s ease;
-        }
+        li {
+          margin: 5px 0;
+        
+          a {
+            position: relative;
+            color: #F3F3F3;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            padding: 5px 0;
+          }
 
-        a:hover:before {
-          bottom: 0;
-          opacity: 1;
+          a:hover {
+            color: #398fef;
+          }
         }
       }
-    }
     }
 
     @media only screen and (max-width: 768px) {
@@ -113,29 +99,29 @@ const Container = styled.footer`
     }
   `;
 
-  const Logo = styled.a`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    img {   
+const Logo = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
     height: 210px;
     width: 100px;
-    }
-    
-    @media only screen and (max-width: 768px) {
-      img {
-        transform: scale(0.5);
-      }
-    }
-  `;
+  }
 
-  const Copyright = styled.p`
+  @media only screen and (max-width: 768px) {
+    img {
+      transform: scale(0.5);
+    }
+  }
+`;
+
+const Copyright = styled.p`
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #F3F3F3;
-  `;
+  color: #f3f3f3;
+`;
 
 export default Footer;
