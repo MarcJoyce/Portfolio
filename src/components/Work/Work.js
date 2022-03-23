@@ -15,8 +15,11 @@ function Work() {
         Work
       </h3>
       <h4>
-        Check out my latest work
+        Check out some of my work
       </h4>
+      <p>
+        Much of my career has been within the Public Sector and so evidence of my contributions to those organisations cannot be demonstrated for public viewing due to the nature of work completed. Below you can find a small collection of personal projects which demonstrate my skillset.
+      </p>
       </TitleContainer>
       <WorkContainer>
         {workItems.map((item, index) => {
@@ -56,11 +59,17 @@ const Container = styled.section`
 
   h3 {
     font-size: 20px;
-    margin-bottom: 20px;
   }
+
+  p {
+    text-align: center;
+    max-width: 75%;
+  }
+
   h4 {
     font-size: 22px;
     font-weight: 300;
+    margin: 40px 0;
   }
   `;
 

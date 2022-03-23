@@ -17,7 +17,8 @@ function About() {
         <span>Web designer</span> and <span>Front-end Developer</span> focussed
         on creating clean and user-friendly experiences.
         <br />
-        <br /> I am <span>passionate</span> about building excellent software
+        <br /> 
+        I am <span>passionate</span> about building excellent software
         that <span>enhances the lives of those around me</span>, working with
         people to help them make their <span>dreams a reality</span>. When I'm
         not working, learning new technologies or working on a project; I'll be

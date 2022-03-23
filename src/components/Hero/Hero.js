@@ -9,7 +9,7 @@ function Hero() {
   
   return (
     <Container id="hero">
-      <HeroCanvas id="anim"/>
+      <HeroCanvas/>
       <Background>
         <div></div>
         <div></div>
@@ -41,13 +41,13 @@ const Container = styled.section`
     width: 100%;
     position: relative;
 
-    canvas:first-child {
+    canvas {
       height: 100%;
       width: 100%;
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1;
+      z-index: -2;
     }
   `;
   

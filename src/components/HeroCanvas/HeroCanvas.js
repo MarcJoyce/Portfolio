@@ -1,114 +1,88 @@
-import * as THREE from 'three';
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { Canvas, extend, useFrame, useLoader, useThree } from 'react-three-fiber';
-import circleImg from './circleImg.png';
-import { Suspense, useCallback, useMemo, useRef } from 'react';
-extend({OrbitControls})
+import { OrbitControls, Stars, Text } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
 
-function CameraControls(){
-  const {
-    camera,
-    gl: {domElement}
-  } = useThree();
+const sizes = {
+  width: window.innerWidth,
+  height: window.innerHeight
+};
 
-  const controlsRef = useRef();
-  useFrame(() => controlsRef.current.update())
-
+export default function HeroCanvas() {
   return (
-    <orbitControls
-      ref={controlsRef}
-      args={[camera, domElement]}
-      autoRotate
-      autoRotateSpeed={-0.2}
-    />
-  );
-}
-
-function Points() {
-  const imgTex = useLoader(THREE.TextureLoader, circleImg);
-  const bufferRef = useRef();
-
-  let t = 0;
-  let f = 0.002;
-  let a = 3;
-  const graph = useCallback((x, z) => {
-    return Math.sin(f * (x ** 2 + z ** 2 + t)) * a;
-  }, [t, f, a])
-
-  const count = 100
-  const sep = 3
-  let positions = useMemo(() => {
-    let positions = []
-
-    for (let xi = 0; xi < count; xi++) {
-      for (let zi = 0; zi < count; zi++) {
-        let x = sep * (xi - count / 2);
-        let z = sep * (zi - count / 2);
-        let y = graph(x, z);
-        positions.push(x, y, z);
-      }
-    }
-
-    return new Float32Array(positions);
-  }, [count, sep, graph])
-
-  useFrame(() => {
-    t += 15
-    
-    const positions = bufferRef.current.array;
-
-    let i = 0;
-    for (let xi = 0; xi < count; xi++) {
-      for (let zi = 0; zi < count; zi++) {
-        let x = sep * (xi - count / 2);
-        let z = sep * (zi - count / 2);
-
-        positions[i + 1] = graph(x, z);
-        i += 3;
-      }
-    }
-
-    bufferRef.current.needsUpdate = true;
-  })
-
-  return (
-    <points>
-      <bufferGeometry attach="geometry">
-        <bufferAttribute
-          ref={bufferRef}
-          attachObject={['attributes', 'position']}
-          array={positions}
-          count={positions.length / 3}
-          itemSize={3}
-        />
-      </bufferGeometry>
-
-      <pointsMaterial
-        attach="material"
-        map={imgTex}
-        color={0x777777}
-        size={0.5}
-        sizeAttenuation
-        transparent={false}
-        alphaTest={0.5}
-        opacity={1.0}
+    <Canvas className="canvas">
+      <OrbitControls 
+       autoRotate autoRotateSpeed={0.5}
       />
-    </points>
-  );
-}
-
-function HeroCanvas() {
-  return (
-    <Canvas
-      colorManagement={false}
-      camera={{ position: [100, 10, 0], fov: 75 }}
-    >
       <Suspense fallback={null}>
-        <Points />
+        <perspectiveCamera
+          fov={60}
+          aspect={sizes.width / sizes.height}
+          position={[0, 0, 0]}
+          near={0.1}
+          far={300}
+        >
+          <Stars
+            radius={100}
+            depth={50}
+            count={5000}
+            factor={4}
+            saturation={0}
+            fade
+          />
+          <Text
+            color={'#F3F3F3'}
+            fontSize={16}
+            font="./Spartan-Regular.ttf"
+            anchorX="center"
+            anchorY="middle"
+            fillOpacity={0.04}
+            position={[0, 25, -50]}
+            rotation={[0, 0, 0]}
+            >
+                React
+            </Text>
+            
+            <Text
+            color={'#F3F3F3'}
+            fontSize={8}
+            font="./Spartan-Regular.ttf"
+            anchorX="center"
+            anchorY="middle"
+            fillOpacity={0.04}
+            position={[50, -20, 0]}
+            rotation={[0, 4.5, 0]}
+            >
+                TypeScript
+            </Text>
+                        
+            <Text
+            color={'#F3F3F3'}
+            fontSize={8}
+            font="./Spartan-Regular.ttf"
+            anchorX="center"
+            anchorY="middle"
+            fillOpacity={0.04}
+            position={[0, 20, 50]}
+            rotation={[0, 9, 0]}
+            >
+                Redux
+            </Text>
+
+            <Text
+            color={'#F3F3F3'}
+            fontSize={8}
+            font="./Spartan-Regular.ttf"
+            anchorX="center"
+            anchorY="middle"
+            fillOpacity={0.04}
+            position={[-50, -20, 0]}
+            rotation={[0, 1.25, 0]}
+            >
+                Three.js
+            </Text>
+        </perspectiveCamera>
       </Suspense>
-      <CameraControls/>
+      <ambientLight />
     </Canvas>
   );
 }
-
-export default HeroCanvas
