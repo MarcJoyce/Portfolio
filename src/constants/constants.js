@@ -1,5 +1,15 @@
 export const WORK_ITEMS = [
   {
+    title: "SWG Profession Calculator",
+    heading: "MMO Online tool for Characters",
+    role: "Developer",
+    blurb: "Profession calculator for Star Wars MMO",
+    githubRepo: "https://github.com/MarcJoyce/SWGProfessionCalculator",
+    websiteLink: "https://marcjoyce.github.io/SWGProfessionCalculator/",
+    subTitle: "",
+    image: "/assets/swg/SWGProfessionCalculator.png",
+  },
+  {
     title: "Father and Son The Karaoke Kings",
     heading: "Musical duo website",
     role: "Designer / Developer",
