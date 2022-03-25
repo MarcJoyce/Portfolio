@@ -9,7 +9,7 @@ function LazyImage({image, placeholder, title}) {
     setImageSrc(image);
   }, [image])
   
-  
+  //Return ImageSrc or Placeholder 2248
 
   return (
     <Image src={imageSrc || placeholder} alt={title} />
