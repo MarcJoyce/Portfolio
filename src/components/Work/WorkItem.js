@@ -19,8 +19,8 @@ function WorkItem({title, image, blurb, heading, live, github}) {
         <p>{heading}</p>
         <p>{blurb}</p>
         <LinkContainer>
-          <a href={live} rel="noreferrer" aria-label={title}>See Live</a>
-          <a href={github} rel="noreferrer" aria-label={title}>Github Code</a>
+          <a href={live} rel="noreferrer" aria-label={title} target={"_blank"}>See Live</a>
+          <a href={github} rel="noreferrer" aria-label={title} target={"_blank"}>Github Code</a>
         </LinkContainer>
     </Container>
   );
