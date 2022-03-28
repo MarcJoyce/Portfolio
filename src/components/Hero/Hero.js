@@ -11,8 +11,8 @@ function Hero() {
     <Container id="hero">
       <HeroCanvas/>
       <Background>
-        <div></div>
-        <div></div>
+        {/* <div></div>
+        <div></div> */}
       </Background>
       <Content>
         <h1>
