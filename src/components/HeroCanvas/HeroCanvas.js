@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import React, { useMemo, useRef, useLayoutEffect, Suspense } from "react";
+import React, { useMemo, useRef, useLayoutEffect, Suspense, useEffect } from "react";
 import { Canvas, extend, useFrame } from "@react-three/fiber";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
@@ -70,7 +70,15 @@ function Text({
     mesh.current.geometry.computeBoundingBox();
     mesh.current.geometry.boundingBox.getSize(size);
     mesh.current.geometry.center();
-  }, [children]);
+  }, []);
+
+useEffect(() => {
+  const size = new THREE.Vector3();
+  mesh.current.geometry.computeBoundingBox();
+  mesh.current.geometry.boundingBox.getSize(size);
+  mesh.current.geometry.center();
+  console.log('useEffect');
+},[props])
 
   function deg2Rad(degree) {
     return degree * Math.PI / 180

@@ -60,6 +60,7 @@ export const WORK_EXPERIENCE = [
       "Transitioned legacy PHP front end code into React",
       "Streamlined front end production deployment through webpack bundling and gulp task automation",
       "Redeveloped user dashboard to comply with financial banking legislation",
+      <p>Creation and maintenance of Morses externally facing websites inc <a href="https://www.uaccount.uk/">UAccount</a>, <a href="https://www.dotdotloans.co.uk/">DotDotLoands</a> and <a href="https://www.morsesclub.com/">Morses Club</a></p>,
     ],
   },
   {

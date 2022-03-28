@@ -13,7 +13,8 @@ function Nav() {
       <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li className="contact"><a href="#contact">Contact</a></li>
       </ul>
     </Container>
   )
@@ -51,7 +52,7 @@ const Container = styled.header`
     align-items: center;
     
     li {
-      margin: 0 0 0 50px;
+      margin: 0 25px 0 25px;
     
     a {
       font-size: 20px;
@@ -80,6 +81,26 @@ const Container = styled.header`
       bottom: 0;
       opacity: 1;
     }
+    }
+
+    .contact a {
+        padding: 10px 20px;
+        background: linear-gradient(270deg,#3949AB,#1A237E);
+        color: white;
+        font-size: 1.25rem;
+        cursor: pointer;
+        position: relative; 
+        transition: all 0.3s ease;
+        border-radius: 8px;
+      
+      &:hover {
+        background: linear-gradient(270deg,#3959AB,#1A337E);
+        color: white;
+      }
+
+      &:hover:before {
+        opacity: 0;
+      }
     }
   }
 

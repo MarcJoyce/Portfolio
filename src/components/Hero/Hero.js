@@ -23,7 +23,7 @@ function Hero() {
         </h2>
 
         <CallToAction>
-          <a href="#about" aria-label="about me">About Me</a>
+          <a href="#contact" aria-label="contact me">Available for hire</a>
         </CallToAction>
 
       </Content>
@@ -44,7 +44,7 @@ const Container = styled.section`
     canvas {
       height: 100%;
       width: 100%;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       z-index: -1;

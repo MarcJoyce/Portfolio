@@ -89,7 +89,7 @@ const Container = styled.div`
     padding: 1.25% 2.5%;
   }
 
-    li {
+    li, li > p {
       color: white;
       font-size: 14px;
       letter-spacing: 1.2px;
@@ -99,6 +99,12 @@ const Container = styled.div`
 
       :nth-child(1) {
         border-top: none;
+      }
+    }
+
+    li > p > a {
+      &:hover {
+        color: white;
       }
     }
 

@@ -18,6 +18,9 @@ function Footer() {
             <a href="#work">Work</a>
           </li>
           <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
             <a href="#contact">Contact</a>
           </li>
           {/* <li>
@@ -56,6 +59,7 @@ const Container = styled.footer`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    background-color: #1c1d25;
 
     div {
       height: fit-content;

@@ -60,6 +60,7 @@ function About() {
 const Container = styled.section`
     min-height: 400px;
     padding: 100px 20%;
+    background-color: #1c1d25;
 
     @media only screen and (max-width: 768px) {
       padding: 100px 5%;
