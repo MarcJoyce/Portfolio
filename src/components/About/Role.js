@@ -61,13 +61,13 @@ const Container = styled.div`
   }
   
   h5 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: #398fef;
   }
 
   h6 {
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
     font-weight: 200;
     color: white;
@@ -91,7 +91,7 @@ const Container = styled.div`
 
     li, li > p {
       color: white;
-      font-size: 14px;
+      font-size: 12px;
       letter-spacing: 1.2px;
       font-weight: 200;
       padding: 5px 0;
@@ -117,14 +117,14 @@ const Container = styled.div`
   font-size: 20px;
   }
 
-  h6 {
-    font-size: 16px;
-    margin-bottom: 10px;
+  ul.active {
+    max-height: 800px;
+    padding: 10px;
   }
 
-    li, a {
-      font-size: 12px;
-    }
+  h6 {
+    margin-bottom: 10px;
+  }
 }
   `;
 

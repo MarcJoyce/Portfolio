@@ -62,25 +62,23 @@ const Container = styled.section`
     padding: 100px 20%;
     background-color: #1c1d25;
 
-    @media only screen and (max-width: 768px) {
-      padding: 100px 5%;
-    }
+   
 
     h3 {
-      font-size: 48px;
+      font-size: 36px;
       color: white;
       margin-bottom: 24px;
     }
 
     h4 {
-      font-size: 36px;
+      font-size: 24px;
       color: white;
       margin: 48px 0 24px;
     }
 
     p {
       color: white;
-      font-size: 20px;
+      font-size: 16px;
       letter-spacing: 1.1px;
 
       span {
@@ -89,6 +87,22 @@ const Container = styled.section`
     }
     ul {
       margin-bottom: 50px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding: 100px 5%;
+
+      h3 {
+        font-size: 24px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
     }
   `;
 

@@ -58,18 +58,36 @@ const Container = styled.section`
   align-items: center;
 
   h3 {
-    font-size: 20px;
-  }
-
-  p {
-    text-align: center;
-    max-width: 75%;
+    font-size: 36px;
+    margin-bottom: 16px;
   }
 
   h4 {
-    font-size: 22px;
-    font-weight: 300;
-    margin: 40px 0;
+    font-size: 24px;
+    text-align: center;
+    margin: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    max-width: 60%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    h3 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 12px;
+      max-width: 100%;
+    }
   }
   `;
 

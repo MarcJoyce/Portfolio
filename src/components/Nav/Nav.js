@@ -116,11 +116,27 @@ const Container = styled.header`
     }
 
     ul li {
-      margin: 0 0 0 15px;
+      margin: 0 5px 0 5px;
     }
 
-    ul li a {
+    ul li a, ul .contact a {
       font-size: 14px;
+    }
+
+    ul .contact a {
+      font-size: 14px;
+      color: white;
+      background: none;
+      padding: 5px 0;
+    
+    &:hover {
+      color: #398fef;
+      background: none;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
     }
   }
 
