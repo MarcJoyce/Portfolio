@@ -113,7 +113,7 @@ const Container = styled.section`
       background: linear-gradient(270deg,#3949AB,#1A237E);
       color: white;
       margin-right: 40px;
-      font-size: 1.25rem;
+      font-size: 24px;
       cursor: pointer;
       position: relative; 
       transition: all 0.3s ease;
@@ -123,6 +123,13 @@ const Container = styled.section`
       background: linear-gradient(270deg,#3959AB,#1A337E);
     }
 
+    }
+
+    @media only screen and (max-width: 768px) {
+      a {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
     }
   `;
   

@@ -13,18 +13,19 @@ const sizes = {
 
 export default function HeroCanvas() {
   return (
-    <Canvas className="canvas">
+    <Canvas className="canvas"
+    camera={{fov: 60, aspect: sizes.width / sizes.height, position:[0, 0, -1.5], near:0.1, far:300}}>
       <OrbitControls
       //  autoRotate autoRotateSpeed={0.5}
       />
       <Suspense fallback={null}>
-        <orthographicCamera
+        {/* <perspectiveCamera
           fov={60}
           aspect={sizes.width / sizes.height}
-          position={[0, 0, 0]}
+          pos={{x: 0, y: 0, z:0}}
           near={0.1}
           far={300}
-        >
+        > */}
           <Stars
             radius={100}
             depth={50}
@@ -33,15 +34,23 @@ export default function HeroCanvas() {
             saturation={0}
             fade
           />
-          <Text position={[0, -1.85, 0]} children="React | Typescript" size={0.33} />
-        </orthographicCamera>
+          {/* <Text position={[0, -0.33, 0]} children="React | Typescript" size={0.05} /> */}
+        {/* </perspectiveCamera> */}
       </Suspense>
       <ambientLight />
+      {/* <CameraAnimation /> */}
     </Canvas>
   );
 }
 
 extend({ TextGeometry });
+
+function CameraAnimation() {
+    useFrame(({ clock, camera }) => {
+      camera.position.z += 0.005 * Math.sin(clock.elapsedTime * 1)
+    })
+    return null
+}
 
 function Text({
   children,
@@ -70,6 +79,7 @@ function Text({
     mesh.current.geometry.computeBoundingBox();
     mesh.current.geometry.boundingBox.getSize(size);
     mesh.current.geometry.center();
+    mesh.current.rotation.y = deg2Rad(90)
   }, []);
 
 useEffect(() => {
@@ -77,7 +87,7 @@ useEffect(() => {
   mesh.current.geometry.computeBoundingBox();
   mesh.current.geometry.boundingBox.getSize(size);
   mesh.current.geometry.center();
-  console.log('useEffect');
+  
 },[props])
 
   function deg2Rad(degree) {
@@ -85,8 +95,8 @@ useEffect(() => {
   }
 
   useFrame(() => {
-    if (mesh.current.rotation.y >= deg2Rad(90)) { 
-      mesh.current.rotation.y = deg2Rad(-90)
+    if (mesh.current.rotation.y >= deg2Rad(270)) { 
+      mesh.current.rotation.y = deg2Rad(90)
     } else {
       mesh.current.rotation.y += deg2Rad(0.5)
     }
