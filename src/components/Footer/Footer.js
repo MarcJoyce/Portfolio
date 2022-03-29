@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import SocialIcon from "../Social/SocialIcon.js";
+import Fade from 'react-reveal/Fade'
 
 function Footer() {
   return (
     <Container id="contact">
+      <Fade bottom>
       <Logo href="https://www.marcjoyce.com" aria-label="Marc Joyce Website">
         <img src="/assets/logo.svg" alt="Logo" />
       </Logo>
-      <div>
+      <section>
         <p>Quick links</p>
         <ul>
           <li>
@@ -27,8 +29,8 @@ function Footer() {
             <a href="#">Fun</a>
           </li> */}
         </ul>
-      </div>
-      <div>
+      </section>
+      <section>
         <p>Get in touch</p>
         <ul>
           <li>
@@ -47,26 +49,27 @@ function Footer() {
             <SocialIcon icon="email" link="mailto:marcjoyce90@googlemail.com" />
           </li>
         </ul>
-      </div>
-      <Copyright>© {new Date().getFullYear()} Marc Joyce</Copyright>
+      </section>
+      <section className="copywright">© {new Date().getFullYear()} Marc Joyce</section>
+      </Fade>
     </Container>
   );
 }
 
 const Container = styled.footer`
     position: relative;
-    padding: 50px 0;
+    padding: 25px 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: #1c1d25;
 
-    div {
+    section {
       height: fit-content;
       width: 200px;
 
       p {
-        font-size: 20px;
+        font-size: 16px;
         color: white;
         margin-bottom: 15px;
         padding-bottom: 10px;
@@ -84,7 +87,7 @@ const Container = styled.footer`
           a {
             position: relative;
             color: #F3F3F3;
-            font-size: 16px;
+            font-size: 14px;
             transition: all 0.3s ease;
             padding: 5px 0;
           }
@@ -98,8 +101,19 @@ const Container = styled.footer`
 
     @media only screen and (max-width: 768px) {
       div p {
-        font-size: 16px;
+        font-size: 14px;
       }
+
+      a {
+        font-size: 12px;
+      }
+    }
+
+    .copywright {
+      position: absolute;
+      bottom: 0;
+      color: #f3f3f3;
+      width: fit-content;
     }
   `;
 
@@ -118,14 +132,6 @@ const Logo = styled.a`
       transform: scale(0.5);
     }
   }
-`;
-
-const Copyright = styled.p`
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #f3f3f3;
 `;
 
 export default Footer;

@@ -3,9 +3,12 @@ import styled from "styled-components";
 
 import LazyImage from './LazyImage'
 
+import Fade from 'react-reveal/Fade'
+
 function WorkItem({title, image, blurb, heading, live, github}) {
 
   return (
+    <Fade bottom>
     <Container>
       <ImageContainer>
         <LazyImage 
@@ -23,13 +26,13 @@ function WorkItem({title, image, blurb, heading, live, github}) {
           <a href={github} rel="noreferrer" aria-label={title} target={"_blank"}>Github Code</a>
         </LinkContainer>
     </Container>
+    </Fade>
   );
 }
 
 const Container = styled.div`
     width: 100%;
     max-width: 800px;
-    margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;

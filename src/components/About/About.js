@@ -5,13 +5,16 @@ import { WORK_EXPERIENCE } from '../../constants/constants'
 
 import Role from './Role'
 
+import Fade from 'react-reveal/Fade';
+
 function About() {
 
     const work = WORK_EXPERIENCE;
   
   return (
     <Container id="about">
-      <h3>All About Me</h3>
+      <Fade bottom>
+        <h3>All About Me</h3>
       <p>
         Hi, I'm <span>Marc</span>, a North-West UK based,{" "}
         <span>Web designer</span> and <span>Front-end Developer</span> focussed
@@ -34,7 +37,7 @@ function About() {
             />
           )
       })}
-       
+      </Fade>
       {/* <p>
         My technology skills are aligned to Javascript, working with the MERN
         stack (MongoDB, Express.js, React.js and Node.js). My preference leans towards working on Front-end, taking advantage of the great utility and freedom that React gives, utilising the latest technologies within my work.

@@ -85,7 +85,7 @@ const Container = styled.div`
   }
 
   ul.active {
-    max-height: 800px;
+    max-height: fit-content;
     padding: 1.25% 2.5%;
   }
 
@@ -118,7 +118,6 @@ const Container = styled.div`
   }
 
   ul.active {
-    max-height: 800px;
     padding: 10px;
   }
 

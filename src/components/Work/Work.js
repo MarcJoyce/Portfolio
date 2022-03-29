@@ -5,12 +5,15 @@ import WorkItem from './WorkItem'
 
 import { WORK_ITEMS } from '../../constants/constants'
 
+import Fade from 'react-reveal/Fade'
+
 function Work() {
   const workItems = WORK_ITEMS;
 
   return (
     <Container id="work">
-      <TitleContainer>
+      <Fade bottom>
+        <TitleContainer>
       <h3>
         Work
       </h3>
@@ -21,10 +24,11 @@ function Work() {
         Much of my career has been within the Public Sector and so evidence of my contributions to those organisations cannot be demonstrated for public viewing due to the nature of work completed. Below you can find a small collection of personal projects which demonstrate my skillset.
       </p>
       </TitleContainer>
+      </Fade>
       <WorkContainer>
         {workItems.map((item, index) => {
           return (
-            <WorkItem 
+              <WorkItem 
               key={index}
               title={item.title}
               heading={item.heading}
@@ -32,7 +36,7 @@ function Work() {
               image={item.image} 
               live={item.websiteLink}
               github={item.githubRepo}             
-            />   
+            />
           )
         })}
       </WorkContainer>
@@ -98,6 +102,12 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   margin: 5%;
+
+   > div {
+    width: 100%;
+    max-width: 800px;
+    margin: 25px;
+  }
   `;
 
 export default Work

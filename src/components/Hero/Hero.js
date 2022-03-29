@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import HeroCanvas from '../HeroCanvas/HeroCanvas'
-
+import Fade from 'react-reveal/Fade';
 
 function Hero() {
   
@@ -15,22 +15,28 @@ function Hero() {
         <div></div> */}
       </Background>
       <Content>
-        <h1>
+        <Fade bottom delay={1000}>
+          <h1>
           Marc Joyce
         </h1>
+        </Fade>
+        <Fade bottom delay={1300}>
         <h2> 
           Front-end Developer
         </h2>
-
+        </Fade>
+        <Fade bottom delay={1600}>
         <CallToAction>
           <a href="#contact" aria-label="contact me">Available for hire</a>
         </CallToAction>
-
+        </Fade>
       </Content>
 
-      <ToWork href="#work">
+      <Fade bottom delay={2000}>
+        <ToWork href="#work">
         <p>work</p>
       </ToWork>
+      </Fade>
     </Container>
   )
 }
