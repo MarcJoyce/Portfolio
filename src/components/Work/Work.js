@@ -21,7 +21,7 @@ function Work() {
         Check out some of my work
       </h4>
       <p>
-        Much of my career has been within the Public Sector and so evidence of my contributions to those organisations cannot be demonstrated for public viewing due to the nature of work completed. Below you can find a small collection of personal projects which demonstrate my skillset.
+        Much of my career has been within the Public Sector and so evidence of my contributions to those organisations cannot be demonstrated for public viewing due to the nature of work completed. Below you can find a collection of commercial and personal projects which demonstrate my skillset.
       </p>
       </TitleContainer>
       </Fade>
@@ -35,7 +35,8 @@ function Work() {
               blurb={item.blurb}
               image={item.image} 
               live={item.websiteLink}
-              github={item.githubRepo}             
+              github={item.githubRepo}  
+              role={item.role}           
             />
           )
         })}

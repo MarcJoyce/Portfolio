@@ -5,7 +5,7 @@ import LazyImage from './LazyImage'
 
 import Fade from 'react-reveal/Fade'
 
-function WorkItem({title, image, blurb, heading, live, github}) {
+function WorkItem({title, image, blurb, heading, live, github, role}) {
 
   return (
     <Fade bottom>
@@ -18,12 +18,13 @@ function WorkItem({title, image, blurb, heading, live, github}) {
           />
         <span></span>
       </ImageContainer>
-        <h4>{title}</h4>
-        <p>{heading}</p>
-        <p>{blurb}</p>
+        {title && <h4>{title}</h4>}
+        {heading && <p>{heading}</p>}
+        {blurb && <p>{blurb}</p>}
+        {/* {role && <p><strong>My Role: {role}</strong></p>} */}
         <LinkContainer>
-          <a href={live} rel="noreferrer" aria-label={title} target={"_blank"}>See Live</a>
-          <a href={github} rel="noreferrer" aria-label={title} target={"_blank"}>Github Code</a>
+          {live && <a href={live} rel="noreferrer" aria-label={title} target={"_blank"}>See Live</a>}
+          {github && <a href={github} rel="noreferrer" aria-label={title} target={"_blank"}>Github Code</a>}
         </LinkContainer>
     </Container>
     </Fade>
@@ -33,9 +34,10 @@ function WorkItem({title, image, blurb, heading, live, github}) {
 const Container = styled.div`
     width: 100%;
     max-width: 800px;
+    min-height: 369px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: space-between;
     position: relative;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);

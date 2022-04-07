@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade'
 
 function Footer() {
   return (
-    <Container id="contact">
+    <Container>
       <Fade bottom>
       <Logo href="https://www.marcjoyce.com" aria-label="Marc Joyce Website">
         <img src="/assets/logo.svg" alt="Logo" />
@@ -58,7 +58,7 @@ function Footer() {
 
 const Container = styled.footer`
     position: relative;
-    padding: 25px 0;
+    padding: 100px 5%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
