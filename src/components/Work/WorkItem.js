@@ -13,7 +13,7 @@ function WorkItem({title, image, blurb, heading, live, github, role}) {
       <ImageContainer>
         <LazyImage 
             image={image}
-            placeholder="assets/placeholder.png" 
+            placeholder="assets/placeholder.webp" 
             title={title}
           />
         <span></span>

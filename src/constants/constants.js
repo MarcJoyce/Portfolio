@@ -7,7 +7,7 @@ export const WORK_ITEMS = [
     // githubRepo: "https://github.com/MarcJoyce/SWGProfessionCalculator",
     websiteLink: "https://www.uaccount.uk/",
     subTitle: "",
-    image: "/assets/uAccountImage.png",
+    image: "/assets/uAccountImage.webp",
   },
   {
     title: "DotDot Loans",
@@ -17,7 +17,7 @@ export const WORK_ITEMS = [
     // githubRepo: "https://github.com/MarcJoyce/SWGProfessionCalculator",
     websiteLink: "https://www.dotdotloans.co.uk/",
     subTitle: "",
-    image: "/assets/DotDotLoansImage.png",
+    image: "/assets/DotDotLoansImage.webp",
   },
   {
     title: "Morses Club",
@@ -27,7 +27,7 @@ export const WORK_ITEMS = [
     // githubRepo: "https://github.com/MarcJoyce/SWGProfessionCalculator",
     websiteLink: "https://www.morsesclub.com/",
     subTitle: "",
-    image: "/assets/MorsesImage.png",
+    image: "/assets/MorsesImage.webp",
   },
   {
     title: "SWG Profession Calculator",
@@ -37,7 +37,7 @@ export const WORK_ITEMS = [
     githubRepo: "https://github.com/MarcJoyce/SWGProfessionCalculator",
     websiteLink: "https://marcjoyce.github.io/SWGProfessionCalculator/",
     subTitle: "",
-    image: "/assets/SWGImage.png",
+    image: "/assets/SWGImage.webp",
   },
   {
     title: "Father and Son The Karaoke Kings",
@@ -47,7 +47,7 @@ export const WORK_ITEMS = [
     githubRepo: "https://github.com/MarcJoyce/Father-and-Son-Karaoke",
     websiteLink: "https://marcjoyce.github.io/Father-and-Son-Karaoke/",
     subTitle: "",
-    image: "/assets/faskImage.png",
+    image: "/assets/faskImage.webp",
   },
   // {
   //   title: "MERN Memories project",
@@ -57,7 +57,7 @@ export const WORK_ITEMS = [
   //   githubRepo: "https://github.com/MarcJoyce/MERN-Project",
   //   websiteLink: "https://marcjoyce.github.io/MERN-Project/",
   //   subTitle: "",
-  //   image: "/assets/memories/image.png",
+  //   image: "/assets/memories/image.webp",
   // },
   {
     title: "Disney Plus",
@@ -67,7 +67,7 @@ export const WORK_ITEMS = [
     githubRepo: "https://github.com/MarcJoyce/disney-plus-clone",
     websiteLink: "https://disneyplusclone-c8834.web.app/",
     subTitle: "",
-    image: "/assets/DisneyImage.png",
+    image: "/assets/DisneyImage.webp",
   },
   // {
   //   title: "Amazon Website",
@@ -77,7 +77,7 @@ export const WORK_ITEMS = [
   //   githubRepo: "https://github.com/MarcJoyce/Amazon-Clone",
   //   websiteLink: "https://marcjoyce.github.io/Amazon-Clone/",
   //   subTitle: "",
-  //   image: "/assets/amazon/image.png",
+  //   image: "/assets/amazon/image.webp",
   // }
 ];
 

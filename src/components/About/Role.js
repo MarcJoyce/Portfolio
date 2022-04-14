@@ -5,7 +5,7 @@ function Role({ role }) {
   const [activeChevron, setActiveChevron] = useState(false);
 
   const handleChevron = () => {
-    setActiveChevron(!activeChevron);
+    setActiveChevron(cur => !cur);
   };
 
   return (
