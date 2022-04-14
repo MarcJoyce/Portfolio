@@ -88,7 +88,6 @@ const Container = styled.footer`
             position: relative;
             color: #F3F3F3;
             font-size: 14px;
-            transition: all 0.3s ease;
             padding: 5px 0;
           }
 

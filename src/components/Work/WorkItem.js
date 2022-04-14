@@ -68,7 +68,6 @@ const ImageContainer = styled.div`
   height: 100%;
   width: 100%;
   position: absolute;
-  transition: all 1s ease;
 
   span {
     position: absolute;
@@ -95,7 +94,6 @@ display: flex;
         z-index: 10;
         margin: 10px;
         cursor: pointer;
-        transition: all 0.3s ease;
         font-weight: bold;
   
         &:hover {

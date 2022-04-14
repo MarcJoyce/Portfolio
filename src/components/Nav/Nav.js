@@ -78,7 +78,6 @@ const Container = styled.header`
       transform: translateX(-50%);
       border-bottom: 2px solid #398fef;;
       opacity: 0;
-      transition: all 0.3s ease;
     }
 
     a:hover:before {
@@ -94,7 +93,6 @@ const Container = styled.header`
         font-size: 1.25rem;
         cursor: pointer;
         position: relative; 
-        transition: all 0.3s ease;
         border-radius: 8px;
       
       &:hover {

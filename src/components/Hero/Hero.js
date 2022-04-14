@@ -122,7 +122,6 @@ const Container = styled.section`
       font-size: 24px;
       cursor: pointer;
       position: relative; 
-      transition: all 0.3s ease;
       border-radius: 8px;
     
     &:hover {
@@ -151,7 +150,6 @@ const Container = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
 
     p {
       transform: rotate(45deg) translateY(-100%);

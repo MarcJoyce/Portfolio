@@ -5,12 +5,12 @@ function Role({ role }) {
   const [activeChevron, setActiveChevron] = useState(false);
 
   const handleChevron = () => {
-    setActiveChevron(cur => !cur);
+    setActiveChevron((cur) => !cur);
   };
 
   return (
-    <Container>
-      <div onClick={handleChevron}>
+    <Container onClick={handleChevron}>
+      <summary>
         <div>
           <p>{role.startDate}</p>
           <h5>{role.role}</h5>
@@ -21,7 +21,7 @@ function Role({ role }) {
           alt="chevron"
           className={activeChevron ? "active" : ""}
         />
-      </div>
+      </summary>
       <ul className={activeChevron ? "active" : ""}>
         {role.responsibilities.map((responsibility, index) => {
           return <li key={responsibility}>{responsibility}</li>;
@@ -31,32 +31,37 @@ function Role({ role }) {
   );
 }
 
-const Container = styled.div`
+const Container = styled.details`
 
   margin: 25px; 0;
 
-  div:nth-child(1) {
+  summary {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     cursor: pointer;
 
+    &::marker {
+      display: none;
+    }
+
     div {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 5px;
+      flex: 1;
+      width: 100%;
     }
 
     img {
+      position: absolute;
+      right: 0;
       height: 25px;
       width: 25px;
       transform: rotate(90deg);
-      cursor: pointer;
-      transition: 0.3s all ease;
-    }
+      margin-top: auto;
+      margin-bottom: auto;
 
-    img.active {
-      transform: rotate(270deg);
+      &.active {
+        transform: rotate(270deg);
+      }
     }
   }
   
@@ -70,31 +75,22 @@ const Container = styled.div`
     font-size: 16px;
     font-style: italic;
     font-weight: 200;
-    color: white;
+    color: #FFFFFF;
     margin-bottom: 5px;
   }
 
   ul {
-    max-height: 0;
-    overflow: hidden;
     margin-top: 10px;
-    padding: 0 2.5%;
-    transition: 0.3s all ease;
-    background-color: rgba(57, 143, 239,0.15);
+    padding: 15px;
+    border: 1px solid rgba(57, 143, 239, 0.4);
     border-radius: 8px;
-  }
-
-  ul.active {
-    max-height: fit-content;
-    padding: 1.25% 2.5%;
-  }
-
+  
     li, li > p {
-      color: white;
+      color: #FFFFFF;
       font-size: 12px;
       letter-spacing: 1.2px;
-      font-weight: 200;
-      padding: 5px 0;
+      font-weight: 300;
+      padding: 7.5px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
 
       :nth-child(1) {
@@ -104,7 +100,7 @@ const Container = styled.div`
 
     li > p > a {
       &:hover {
-        color: white;
+        color: #FFFFFF;
       }
     }
 
@@ -112,14 +108,12 @@ const Container = styled.div`
       color: #398fef;
       font-weight: bold;
     }
+  }
+
 
 @media only screen and (max-width: 768px) {
   h5 {
   font-size: 20px;
-  }
-
-  ul.active {
-    padding: 10px;
   }
 
   h6 {
