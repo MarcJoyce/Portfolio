@@ -15,9 +15,9 @@ export default function HeroCanvas() {
   return (
     <Canvas className="canvas"
     camera={{fov: 60, aspect: sizes.width / sizes.height, position:[0, 0, -1.5], near:0.1, far:300}}>
-      <OrbitControls
+      {/* <OrbitControls
       //  autoRotate autoRotateSpeed={0.5}
-      />
+      /> */}
       <Suspense fallback={null}>
         {/* <perspectiveCamera
           fov={60}
