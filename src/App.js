@@ -2,8 +2,9 @@ import './App.css';
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
-import Home from './components/Home/Home.js';
 
+import Home from './components/Home/Home.js';
+import SWG from './pages/SWG.js'
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
 
   return (
     <Router>
-        <Route path="/" exact component={Home} /> 
+        <Route path="/" exact component={Home} />
+        <Route path="/SWG" exact component={SWG} /> 
     </Router>
   )
 }

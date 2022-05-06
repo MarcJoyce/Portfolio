@@ -23,7 +23,7 @@ export const WORK_ITEMS = [
     title: "Morses Club",
     heading: "Morses Club website",
     role: "Frontend Engineer",
-    blurb: "rontend Engineer for creation and maintenance of webpages",
+    blurb: "Frontend Engineer for creation and maintenance of webpages",
     // githubRepo: "https://github.com/MarcJoyce/SWGProfessionCalculator",
     websiteLink: "https://www.morsesclub.com/",
     subTitle: "",
