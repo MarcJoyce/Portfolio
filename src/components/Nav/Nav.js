@@ -1,27 +1,28 @@
-import React from 'react'
-import styled from 'styled-components'
-
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import styled from "styled-components";
 
 function Nav() {
-  
-  
-  
   return (
     <Container>
-      <Fade bottom>
-        <a href="https://www.marcjoyce.com" aria-label="Marc Joyce website">
+      <a href="https://www.marcjoyce.com" aria-label="Marc Joyce website">
         <img src="/assets/logo.svg" alt="logo svg" />
-      </a>        
-      </Fade>
-        <ul>
-        <Fade bottom delay={100}><li><a href="#hero">Home</a></li></Fade>
-        <Fade bottom delay={200}><li><a href="#work">Work</a></li></Fade>
-        <Fade bottom delay={300}><li><a href="#about">About</a></li></Fade>
-        <Fade bottom delay={400}><li className="contact"><a href="#contact">Contact</a></li></Fade>
+      </a>
+      <ul>
+        <li>
+          <a href="#hero">Home</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li className="contact">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </Container>
-  )
+  );
 }
 
 const Container = styled.header`
@@ -144,5 +145,4 @@ const Container = styled.header`
 
   `;
 
-export default Nav
- 
+export default Nav;
