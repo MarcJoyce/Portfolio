@@ -207,5 +207,6 @@ h3 {
 
 input {
   margin: 0 10px;
+  width: 50px;
 }
 `;
