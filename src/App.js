@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
         <Route path="/" exact component={Home} />
-        <Route path="/SWG" exact component={SWG} /> 
+        <Route path="/SWG" component={SWG} /> 
     </Router>
   )
 }
