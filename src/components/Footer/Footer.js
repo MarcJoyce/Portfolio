@@ -3,6 +3,8 @@ import styled from "styled-components";
 import SocialIcon from "../Social/SocialIcon.js";
 import Fade from 'react-reveal/Fade'
 
+import { Link } from 'react-router-dom'
+
 function Footer() {
   return (
     <Container>
@@ -21,6 +23,9 @@ function Footer() {
           </li>
           <li>
             <a href="#about">About</a>
+          </li>
+          <li>
+            <Link to={`/SWG`}>SWG Doc Calc</Link>
           </li>
           <li>
             <a href="#contact">Contact</a>

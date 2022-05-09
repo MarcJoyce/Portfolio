@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basemname={`/${process.env.PUBLIC_URL}`}>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/SWG" component={SWG} />
