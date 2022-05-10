@@ -32,11 +32,30 @@ const SWG = () => {
     epd: 0
   })
 
+  const MAX_VALUES = {
+    herboq: 1000,
+    herbpe: 700,
+    petrooq: 1000,
+    petrope: 1000,
+    ironoq: 1000,
+    oatsoq: 1000,
+    oatspe: 1000,
+    fiberoq: 1000,
+    wheatoq: 1000,
+    wheatpe: 700,
+    gasoq: 1000,
+    gasdr: 1000,
+    avianoq: 1000,
+    avianpe: 1000,
+    aviandr: 1000,
+  }
+
   const handleChange = e => {
     const { name, value } = e.target;
+    const maxValue = MAX_VALUES[name];
     setIng(prevState => ({
         ...prevState,
-        [name]: value
+        [name]: value > maxValue ? maxValue : value < 0 ? 0 : value
     }));
   };
 
