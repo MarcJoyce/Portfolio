@@ -25,9 +25,6 @@ function Footer() {
             <a href="#about">About</a>
           </li>
           <li>
-            <Link to={`/SWG`}>SWG Doc Calc</Link>
-          </li>
-          <li>
             <a href="#contact">Contact</a>
           </li>
           {/* <li>
