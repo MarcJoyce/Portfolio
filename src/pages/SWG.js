@@ -76,6 +76,8 @@ const SWG = () => {
             name="herboq"
             value={ing.herboq}
             onChange={handleChange}
+            min={0}
+            max={1000}
           />
         </label>
         <label>
@@ -83,7 +85,10 @@ const SWG = () => {
           <input type="number" 
             name="herbpe"
             value={ing.herbpe}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+            max={700}
+            />
           </label>
         <h3>Class 4 Liquid Petro Fuel</h3>
         <label>
@@ -91,14 +96,20 @@ const SWG = () => {
           <input type="number" 
             name="petrooq"
             value={ing.petrooq}
-            onChange={handleChange}/>
+            onChange={handleChange}
+              min={0}
+              max={1000}
+            />
         </label>
         <label>
           PE
           <input type="number" 
             name="petrope"
             value={ing.petrope}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
           </label>
         <h3>Dolovite Iron</h3>
         <label>
@@ -106,7 +117,10 @@ const SWG = () => {
           <input type="number" 
             name="ironoq"
             value={ing.ironoq}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
         </label>
         <h3>Domesticated Oats</h3>
         <label>
@@ -114,14 +128,20 @@ const SWG = () => {
           <input type="number" 
             name="oatsoq"
             value={ing.oatsoq}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
         </label>
         <label>
           PE
           <input type="number" 
             name="oatspe"
             value={ing.oatspe}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
           </label>
         <h3>Tatooinian Fiberplast</h3>
         <label>
@@ -129,7 +149,10 @@ const SWG = () => {
           <input type="number" 
             name="fiberoq"
             value={ing.fiberoq}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
         </label>
         <h3>Lokian Wild Wheat</h3>
         <label>
@@ -137,14 +160,20 @@ const SWG = () => {
           <input type="number" 
             name="wheatoq"
             value={ing.wheatoq}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
         </label>
         <label>
           PE
           <input type="number" 
             name="wheatpe"
             value={ing.wheatpe}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={700}
+            />
           </label>
         <h3>Reactive Gas</h3>
         <label>
@@ -152,14 +181,20 @@ const SWG = () => {
           <input type="number" 
             name="gasoq"
             value={ing.gasoq}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
         </label>
         <label>
           DR
           <input type="number" 
             name="gasdr"
             value={ing.gasdr}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
           </label>
         <h3>Avian Meat</h3>
         <label>
@@ -167,21 +202,30 @@ const SWG = () => {
           <input type="number" 
             name="avianoq"
             value={ing.avianoq}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
         </label>
         <label>
           PE
           <input type="number" 
             name="avianpe"
             value={ing.avianpe}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
           </label>
         <label>
           DR
           <input type="number" 
             name="aviandr"
             value={ing.aviandr}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            min={0}
+              max={1000}
+            />
           </label>
 
         <br />
