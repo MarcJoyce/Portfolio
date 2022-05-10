@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SocialIcon from "../Social/SocialIcon.js";
 import Fade from 'react-reveal/Fade'
 
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 function Footer() {
   return (
@@ -15,18 +15,18 @@ function Footer() {
       <section>
         <p>Quick links</p>
         <ul>
-          <li>
-            <a href="#hero">Home</a>
+        <li>
+        <Link to="/#hero">Home</Link>
           </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+        <li>
+          <Link to="/#work">Work</Link>
+        </li>
+        <li>
+          <Link to="/#about">About</Link>
+        </li>
+        <li>
+          <Link to="/#contact">Contact</Link>
+        </li>
           {/* <li>
             <a href="#">Fun</a>
           </li> */}

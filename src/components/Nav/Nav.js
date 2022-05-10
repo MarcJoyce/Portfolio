@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { HashLink as Link } from 'react-router-hash-link'
+
 function Nav() {
   return (
     <Container>
@@ -9,16 +11,16 @@ function Nav() {
       </a>
       <ul>
         <li>
-          <a href="#hero">Home</a>
+        <Link to="/#hero">Home</Link>
+          </li>
+        <li>
+          <Link to="/#work">Work</Link>
         </li>
         <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
+          <Link to="/#about">About</Link>
         </li>
         <li className="contact">
-          <a href="#contact">Contact</a>
+          <Link to="/#contact">Contact</Link>
         </li>
       </ul>
     </Container>
