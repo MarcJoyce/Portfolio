@@ -412,7 +412,7 @@ const SWG = () => {
         />
         </h3>
         <br/>
-        <h3>Your Group CL Range is: {(25+(combatLevels*5))+(Math.floor(petCL/5))}*<p>*Note that pet impact is calculated by individual pet CL divided 5 rounded down so this calculator gives an approx group CL</p></h3>
+        <h3>Your Group CL Range is: {(25+((combatLevels-1)*5))+(Math.floor(petCL/5))}*<p>*Note that pet impact is calculated by individual pet CL divided 5 rounded down so this calculator gives an approx group CL</p></h3>
       </div>
     </Container>
   );
