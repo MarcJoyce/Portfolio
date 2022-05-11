@@ -153,6 +153,9 @@ const SWG = () => {
     }));
   }, [ing, manComp]);
 
+  const [combatLevels, setCombatLevels] = useState(0);
+  const [petCL, setPetCL] = useState(0);
+
   return (
     <Container>
       <div>
@@ -346,8 +349,6 @@ const SWG = () => {
         <h3>
           Enhancement Pack (Duration): {(buff.epd / 60 / 60).toFixed(2)} hrs
         </h3>
-
-        <br />
         <br />
         <h3>Manual Components</h3>
         <h3>
@@ -386,6 +387,33 @@ const SWG = () => {
           Enhancement Pack (Duration): {(manBuff.epd / 60 / 60).toFixed(2)} hrs
         </h3>
       </div>
+      <br/>
+      <hr/>
+      <br/>
+      <div>
+        <h2>Group Combat Level Calculator</h2>
+        <h3>Number of Master Combat Professions (inc you): 
+        <input 
+        type="number"
+        value={combatLevels}
+        onChange={(e)=>{
+          setCombatLevels(e.target.value)
+        }}
+        min={1}
+        />
+        </h3>
+        <h3>Total CL of pets: 
+        <input 
+        type="number"
+        value={petCL}
+        onChange={(e)=>setPetCL(e.target.value)}
+        min={1}
+        max={combatLevels * 70}
+        />
+        </h3>
+        <br/>
+        <h3>Your Group CL Range is: {(25+(combatLevels*5))+(Math.floor(petCL/5))}*<p>*Note that pet impact is calculated by individual pet CL divided 5 rounded down so this calculator gives an approx group CL</p></h3>
+      </div>
     </Container>
   );
 };
@@ -402,5 +430,10 @@ const Container = styled.section`
   input {
     margin: 0 10px;
     width: 75px;
+  }
+
+  p {
+    font-weight: 100;
+    font-size: 0.75em;
   }
 `;
