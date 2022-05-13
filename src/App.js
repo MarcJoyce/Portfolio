@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useEffect } from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ReactGA from "react-ga";
 
 import Home from "./components/Home/Home.js";
@@ -18,8 +18,8 @@ function App() {
   return (
     <Router basename={`/${process.env.PUBLIC_URL}`}>
       <Switch>
-        <Route path="/" exact component={Home} />
         <Route path="/SWG" component={SWG} />
+        <Route path="" exact component={Home} />
       </Switch>
     </Router>
   );

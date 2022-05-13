@@ -40,6 +40,16 @@ export const WORK_ITEMS = [
     image: "/assets/SWGImage.webp",
   },
   {
+    title: "SWG Utility Calculators",
+    heading: "MMO Online calculators for SWG",
+    role: "Developer",
+    blurb: "",
+    githubRepo: "https://github.com/MarcJoyce/Portfolio",
+    websiteLink: "https://www.marcjoyce.com/SWG/",
+    subTitle: "",
+    image: "/assets/SWGUtils.webp",
+  },
+  {
     title: "Father and Son The Karaoke Kings",
     heading: "Musical duo website",
     role: "Designer / Developer",
