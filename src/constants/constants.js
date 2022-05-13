@@ -45,7 +45,7 @@ export const WORK_ITEMS = [
     role: "Developer",
     blurb: "",
     githubRepo: "https://github.com/MarcJoyce/Portfolio",
-    websiteLink: "https://www.marcjoyce.com/SWG/",
+    websiteLink: "https://www.marcjoyce.com/#/SWG/",
     subTitle: "",
     image: "/assets/SWGUtils.webp",
   },
