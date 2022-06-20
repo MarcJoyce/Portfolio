@@ -22,9 +22,9 @@ function Contact() {
               link="https://www.github.com/MarcJoyce/"
             />
           </li>
-          <li>
+          {/* <li>
             <SocialIcon icon="email" link="mailto:marcjoyce90@googlemail.com" />
-          </li>
+          </li> */}
         </ul>
       </Fade>
     </Container>

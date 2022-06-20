@@ -47,9 +47,9 @@ function Footer() {
               link="https://www.github.com/MarcJoyce/"
             />
           </li>
-          <li>
+          {/* <li>
             <SocialIcon icon="email" link="mailto:marcjoyce90@googlemail.com" />
-          </li>
+          </li> */}
         </ul>
       </section>
       <section className="copywright">© {new Date().getFullYear()} Marc Joyce</section>
