@@ -438,7 +438,7 @@ const SWG = () => {
       <br />
       <div>
         <h2 style={{marginBottom: '20px'}}>Color code text generator</h2>
-        <div style={{ display: "flex", flexDirection: "row", marginBottom: '50px'}}>
+        <div style={{ display: "flex", flexDirection: "row", marginBottom: '50px', lignItems: 'center'}}>
           <label for="colorText">Enter your text</label>
           <input
             style={{ width: "auto", height: "24px" }}
@@ -452,7 +452,9 @@ const SWG = () => {
             color={color}
             onChange={(color) => setColor(color.hex)}
           /> : null}
-          <p style={{paddingLeft:'12px'}}>{`\\${color}${colorText}`}</p>
+          <p style={{fontSize: '16px', fontWeight: 'bold', paddingLeft:'12px',userSelect: 'text' }}>{`\\${color}${colorText}`}</p>
+          <button style={{marginLeft: '12px', height:'28px', padding: '4px', borderRadius:'8px'}} onClick={() => {{navigator.clipboard.writeText(`\\${color}${colorText}`)}
+        alert('Text copied to clipboard')}}>Copy to clipboard</button>
         </div>
       </div>
     </Container>
