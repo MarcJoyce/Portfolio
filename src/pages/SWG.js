@@ -159,6 +159,7 @@ const SWG = () => {
 
   const [color, setColor] = useState("#000000");
   const [colorText, setColorText] = useState("");
+  const [displayPicker, setDisplayPicker] = useState(false);
 
   return (
     <Container>
@@ -436,8 +437,8 @@ const SWG = () => {
       <hr />
       <br />
       <div>
-        <h2>Color code text generator</h2>
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <h2 style={{marginBottom: '20px'}}>Color code text generator</h2>
+        <div style={{ display: "flex", flexDirection: "row", marginBottom: '50px'}}>
           <label for="colorText">Enter your text</label>
           <input
             style={{ width: "auto", height: "24px" }}
@@ -446,10 +447,11 @@ const SWG = () => {
             value={colorText}
             onChange={(e) => setColorText(e.target.value)}
           />
-          <SketchPicker
+          <div style={{backgroundColor: color, borderColor:'#FFF',borderWidth:'4px',borderRadius:'8px', width:'48px', height:'24px', margin:'0 8px'}} onClick={() => setDisplayPicker((prev) => !prev)}></div>
+          {displayPicker ? <SketchPicker
             color={color}
-            onChangeComplete={(color) => setColor(color.hex)}
-          />
+            onChange={(color) => setColor(color.hex)}
+          /> : null}
           <p style={{paddingLeft:'12px'}}>{`\\${color}${colorText}`}</p>
         </div>
       </div>
