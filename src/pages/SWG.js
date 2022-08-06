@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { SketchPicker } from "react-color";
 
 const SWG = () => {
   const [ing, setIng] = useState({
@@ -59,7 +60,7 @@ const SWG = () => {
     avianpe: 1000,
     aviandr: 1000,
     acrdm: 71.75,
-    asds: 75.00,
+    asds: 75.0,
     abec: 27.27,
   };
 
@@ -155,6 +156,9 @@ const SWG = () => {
 
   const [combatLevels, setCombatLevels] = useState(0);
   const [petCL, setPetCL] = useState(0);
+
+  const [color, setColor] = useState("#000000");
+  const [colorText, setColorText] = useState("");
 
   return (
     <Container>
@@ -361,58 +365,93 @@ const SWG = () => {
             min={10}
           />
         </h3>
-        <h3>Advanced Solid Delivery Shell: 
-        <input
+        <h3>
+          Advanced Solid Delivery Shell:
+          <input
             type="number"
             name="asds"
             value={manComp.asds}
             onChange={handleManChange}
             min={10}
           />
-          </h3>
-        <h3>Advanced Biological Effect Controller: 
-        <input
+        </h3>
+        <h3>
+          Advanced Biological Effect Controller:
+          <input
             type="number"
             name="abec"
             value={manComp.abec}
             onChange={handleManChange}
             min={5}
           />
-          </h3>
+        </h3>
         <h3>
           Enhancement Pack (Power): {manBuff.epp.toFixed(0)} (buffs{" "}
-          {(((110 * (100 + 100 + 23 + 25)) / 100 / 100) * manBuff.epp).toFixed(0)})
+          {(((110 * (100 + 100 + 23 + 25)) / 100 / 100) * manBuff.epp).toFixed(
+            0
+          )}
+          )
         </h3>
         <h3>
           Enhancement Pack (Duration): {(manBuff.epd / 60 / 60).toFixed(2)} hrs
         </h3>
       </div>
-      <br/>
-      <hr/>
-      <br/>
+      <br />
+      <hr />
+      <br />
       <div>
         <h2>Group Combat Level Calculator</h2>
-        <h3>Number of Master Combat Professions (inc you): 
-        <input 
-        type="number"
-        value={combatLevels}
-        onChange={(e)=>{
-          setCombatLevels(e.target.value)
-        }}
-        min={1}
-        />
+        <h3>
+          Number of Master Combat Professions (inc you):
+          <input
+            type="number"
+            value={combatLevels}
+            onChange={(e) => {
+              setCombatLevels(e.target.value);
+            }}
+            min={1}
+          />
         </h3>
-        <h3>Total CL of pets: 
-        <input 
-        type="number"
-        value={petCL}
-        onChange={(e)=>setPetCL(e.target.value)}
-        min={1}
-        max={combatLevels * 70}
-        />
+        <h3>
+          Total CL of pets:
+          <input
+            type="number"
+            value={petCL}
+            onChange={(e) => setPetCL(e.target.value)}
+            min={1}
+            max={combatLevels * 70}
+          />
         </h3>
-        <br/>
-        <h3>Your Group CL Range is: {(25+((combatLevels-1)*5))+(Math.floor(petCL/5))}*<p>*Note that pet impact is calculated by individual pet CL divided 5 rounded down so this calculator gives an approx group CL</p></h3>
+        <br />
+        <h3>
+          Your Group CL Range is:{" "}
+          {25 + (combatLevels - 1) * 5 + Math.floor(petCL / 5)}*
+          <p>
+            *Note that pet impact is calculated by individual pet CL divided 5
+            rounded down so this calculator gives an approx group CL
+          </p>
+        </h3>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h2>Color code text generator</h2>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <label for="colorText">Enter your text</label>
+          <input
+            style={{ width: "auto", height: "24px" }}
+            name="colorText"
+            type="text"
+            value={colorText}
+            onChange={(e) => setColorText(e.target.value)}
+          />
+          <SketchPicker
+            color={color}
+            onChangeComplete={(color) => setColor(color.hex)}
+          />
+          <p style={{paddingLeft:'12px'}}>{`\\${color}${colorText}`}</p>
+        </div>
       </div>
     </Container>
   );
