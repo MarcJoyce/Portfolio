@@ -93,6 +93,16 @@ export const WORK_ITEMS = [
 
 export const WORK_EXPERIENCE = [
   {
+    startDate: 'Oct 2022',
+    role: 'Software Engineer',
+    employer: 'Numark Digital',
+    responsibilities: [
+      '',
+      '',
+      ''
+    ]
+  },
+  {
     startDate: 'Oct 2021',
     role: 'Senior Frontend Engineer',
     employer: 'Morses Club',
@@ -106,7 +116,7 @@ export const WORK_EXPERIENCE = [
         <a href='https://www.dotdotloans.co.uk/'>DotDotLoans</a> and{' '}
         <a href='https://www.morsesclub.com/'>Morses Club</a>
       </p>,
-      'Created automated solution for customers to handle their finances, reducing Operations overhead and imrpoving customer service'
+      'Created automated solution for customers to handle their finances, reducing Operations overhead and improving customer service'
     ]
   },
   {
