@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import HeroCanvas from "../HeroCanvas/HeroCanvas";
+import { HashLink as Link } from 'react-router-hash-link'
 
 function Hero() {
   return (
@@ -17,13 +18,13 @@ function Hero() {
         <h2>Front-end Developer</h2>
 
         <CallToAction>
-          <a href="/#contact" aria-label="contact me">
+          <Link to="/#contact" aria-label="contact me">
             Available for hire
-          </a>
+          </Link>
         </CallToAction>
       </Content>
 
-      <ToWork href="#work">
+      <ToWork to="#work">
         <p>work</p>
       </ToWork>
     </Container>
@@ -126,7 +127,7 @@ const CallToAction = styled.div`
   }
 `;
 
-const ToWork = styled.a`
+const ToWork = styled(Link)`
   position: absolute;
   width: 25px;
   height: 25px;

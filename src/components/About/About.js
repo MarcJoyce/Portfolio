@@ -29,6 +29,7 @@ function About() {
         Total War) and watching football.
       </p>
       <h4>Work</h4>
+      <p>Here are some of my achievements throughout my career</p>
         {work.map((role) => {
           return (
             <Role 
@@ -43,7 +44,7 @@ function About() {
         stack (MongoDB, Express.js, React.js and Node.js). My preference leans towards working on Front-end, taking advantage of the great utility and freedom that React gives, utilising the latest technologies within my work.
         <br />
         <br />
-        I have experience working with different levels of Stakeholder, from
+        I have experience working with different levels of stakeholder, from
         Senior Directors and Cabinet Office ministers, to junior team members
         providing mentorship and training. I drive continuous integration and
         improvement to deliver high value and quality products to the customer,
@@ -64,8 +65,6 @@ const Container = styled.section`
     min-height: 400px;
     padding: 100px 20%;
     background-color: #1c1d25;
-
-   
 
     h3 {
       font-size: 36px;

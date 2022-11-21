@@ -1,3 +1,5 @@
+import { HashLink as Link } from "react-router-hash-link";
+
 export const WORK_ITEMS = [
   {
     title: "UAccount",
@@ -96,11 +98,7 @@ export const WORK_EXPERIENCE = [
     startDate: 'Oct 2022',
     role: 'Software Engineer',
     employer: 'Numark Digital',
-    responsibilities: [
-      '',
-      '',
-      ''
-    ]
+    responsibilities: []
   },
   {
     startDate: 'Oct 2021',
@@ -132,7 +130,7 @@ export const WORK_EXPERIENCE = [
   {
     startDate: 'Aug 2019',
     role: 'Developer',
-    employer: 'Available for freelance work',
+    employer: <p>Available to talk; <Link to="/#contact">Get in touch</Link> to discuss your project</p>,
     responsibilities: [
       'Father and Son The Karaoke Kings - Website created for a father and son musical duo who planned to tackle lockdown in the UK by entertaining thousands across the globe',
       'The Little Bakery - Bakery website for local family run business',

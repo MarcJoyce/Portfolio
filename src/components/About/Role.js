@@ -68,28 +68,37 @@ const Container = styled.details`
   h5 {
   font-size: 24px;
   font-weight: 600;
+  padding: 4px 0;
   color: #398fef;
   }
 
   h6 {
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
     font-weight: 200;
     color: #FFFFFF;
     margin-bottom: 5px;
+    
+      a {
+        color: #398fef;
+        font-weight: bold;
+        &:hover {
+        color: #FFFFFF;
+      }
+    }
   }
 
   ul {
     margin-top: 10px;
     padding: 15px;
-    border: 1px solid rgba(57, 143, 239, 0.4);
+    border: 1px solid rgba(57, 143, 239, 0.2);
     border-radius: 8px;
   
     li, li > p {
       color: #FFFFFF;
       font-size: 12px;
       letter-spacing: 1.2px;
-      font-weight: 300;
+      font-weight: 200;
       padding: 7.5px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
 
