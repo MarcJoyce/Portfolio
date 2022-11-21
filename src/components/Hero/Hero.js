@@ -17,7 +17,7 @@ function Hero() {
         <h2>Front-end Developer</h2>
 
         <CallToAction>
-          <a href="#contact" aria-label="contact me">
+          <a href="/#contact" aria-label="contact me">
             Available for hire
           </a>
         </CallToAction>
