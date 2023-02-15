@@ -27,8 +27,11 @@ function About() {
         not working, learning new technologies or working on a project; I'll be
         annoying my family with Star Wars memes, gaming (either Final Fantasy or
         Total War) and watching football.
-      </p>
-      <h4>Work</h4>
+        </p>
+        <br/>
+        <br />
+        <p>My technology stack includes front-end technologies of <span>React</span> (with <span>Typescript</span>), <span>Redux</span>, <span>Jest</span> & <span>Cypress</span>. I also work with <span>Java</span> and <span>SpringBoot</span> to deliver a back-end which supports those applications</p>
+        <h4>Work</h4>
       <p>Here are some of my achievements throughout my career</p>
         {work.map((role) => {
           return (
@@ -39,24 +42,6 @@ function About() {
           )
       })}
       </Fade>
-      {/* <p>
-        My technology skills are aligned to Javascript, working with the MERN
-        stack (MongoDB, Express.js, React.js and Node.js). My preference leans towards working on Front-end, taking advantage of the great utility and freedom that React gives, utilising the latest technologies within my work.
-        <br />
-        <br />
-        I have experience working with different levels of stakeholder, from
-        Senior Directors and Cabinet Office ministers, to junior team members
-        providing mentorship and training. I drive continuous integration and
-        improvement to deliver high value and quality products to the customer,
-        utilising the best solution for each problem.
-        <br />
-        <br />I have held leadership responsibilities for the last 10 years,
-        being accountable and responsible for delivery of management and
-        operational reporting software and suites to improve performance and
-        quality in each of my roles. I have developed members of my team through
-        personal development plans and seen many of them progress into senior
-        roles.
-      </p> */}
     </Container>
   );
 }

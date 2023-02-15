@@ -2,6 +2,15 @@ import { HashLink as Link } from "react-router-hash-link";
 
 export const WORK_ITEMS = [
   {
+    title: 'Hey Pharmacist',
+    heading: 'Hey Pharmacist website',
+    role: 'Senior Software Engineer',
+    blurb: 'Software Engineer for creation and maintenance of full stack',
+    websiteLink: 'https://www.heypharmacist.co.uk/',
+    subTitle: '',
+    image: '/assets/heypharmacist.webp'
+  },
+  {
     title: "UAccount",
     heading: "uAccount online bank Website - Closed from May 22",
     role: "Frontend Engineer",
@@ -96,9 +105,12 @@ export const WORK_ITEMS = [
 export const WORK_EXPERIENCE = [
   {
     startDate: 'Oct 2022',
-    role: 'Software Engineer',
+    role: 'Senior Software Engineer',
     employer: 'Numark Digital',
-    responsibilities: []
+    responsibilities: [
+      'Develop reports dashboard for pharmacies to view their customers current and historic ordering',
+      'Streamlined continuous integration pipelines adding audit and validation',
+    ]
   },
   {
     startDate: 'Oct 2021',

@@ -4,6 +4,8 @@ import styled from "styled-components";
 import HeroCanvas from "../HeroCanvas/HeroCanvas";
 import { HashLink as Link } from 'react-router-hash-link'
 
+import { WORK_EXPERIENCE } from "../../constants/constants";
+
 function Hero() {
   return (
     <Container id="hero">
@@ -15,11 +17,11 @@ function Hero() {
       <Content>
         <h1>Marc Joyce</h1>
 
-        <h2>Front-end Developer</h2>
+        <h2>{WORK_EXPERIENCE[0].role}</h2>
 
         <CallToAction>
           <Link to="/#contact" aria-label="contact me">
-            Available for hire
+            <p>Let's chat</p>
           </Link>
         </CallToAction>
       </Content>
@@ -113,9 +115,15 @@ const CallToAction = styled.div`
     cursor: pointer;
     position: relative;
     border-radius: 8px;
+    min-width: 160px;
 
     &:hover {
       background: linear-gradient(270deg, #3959ab, #1a337e);
+    }
+
+    p {
+      width: fit-content;
+      margin: 0 auto;
     }
   }
 
